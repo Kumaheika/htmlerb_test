@@ -1,0 +1,20 @@
+@import "compass/reset"
+@import "compass/css3"
+*
+	@include box-sizing(border-box)
+.nav-stly
+	width: 100%
+	border-bottom: 2px solid MediumAquaMarine
+	background: MediumSeaGreen
+ul.navbar
+	padding: 0 10em
+	font-family: helvetica
+	&:before , &:after
+		content: " "
+		display: table
+		clear: both
+	li
+		float: left
+		padding: 1em
+		border-right: 1px solid MintCream
+
