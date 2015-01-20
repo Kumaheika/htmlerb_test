@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title><%= @title ? @title : "HTML 的 erb 練習" %></title>
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<nav class="nav-stly">
+		<div class="nav-icon">3</div>
+		<div class="logo"><a href="#">Kumakobo</a></div>
+		<ul class="navbar">
+			<li><a href="#">list1</a></li>
+			<li><a href="#">list2</a></li>
+			<li><a href="#">list3</a></li>
+			<li><a href="#">list4</a></li>
+			<li><a href="#">list5</a></li>
+			<li><a href="#">list6</a></li>
+		</ul>
+	</nav>
+	<header class="head-zone">
+		<%= render :partial => "head_one" %>
+	</header>
+	<div class="main">
+		<%= yield %>
+	</div>
+	<footer class="foot-page">
+		
+	</footer>
+</body>
+</html>
