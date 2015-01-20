@@ -180,3 +180,6 @@
 2015-01-21 00:45:57 overwrite css/all.css 
 2015-01-21 00:46:25 identical css/all.css 
 2015-01-21 00:50:03 overwrite css/all.css 
+2015-01-21 01:13:19    Create about.html
+2015-01-21 01:13:19    Create index.html
+2015-01-21 01:13:19      Copy /css/all.css
