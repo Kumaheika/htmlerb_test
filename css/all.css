@@ -58,25 +58,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: bisque;
 }
 
 .nav-stly {
+  position: relative;
   width: 100%;
+  height: 60px;
+  padding: 0 10em;
+  font-family: helvetica;
   border-bottom: 2px solid mediumaquamarine;
   background: mediumseagreen;
 }
-
-ul.navbar {
-  padding: 0 10em;
-  font-family: helvetica;
-}
-ul.navbar:before, ul.navbar:after {
+.nav-stly:before, .nav-stly:after {
   content: " ";
   display: table;
   clear: both;
 }
+
+.nav-icon {
+  position: relative;
+  display: none;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  display: block;
+  line-height: 60px;
+}
+
+ul.navbar {
+  float: right;
+}
 ul.navbar li {
   float: left;
-  padding: 1em;
-  border-right: 1px solid mintcream;
+}
+ul.navbar li a {
+  display: block;
+  padding: 0 1em;
+  line-height: 60px;
+}
+ul.navbar li a:hover {
+  color: saddlebrown;
+  background-color: bisque;
 }

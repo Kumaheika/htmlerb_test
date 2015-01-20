@@ -1,20 +1,48 @@
 @import "compass/reset"
 @import "compass/css3"
+//全域屬性
 *
 	@include box-sizing(border-box)
+	text-decoration: none
+a
+	color: #fff
+	&:hover
+		color: Bisque
+//layout
 .nav-stly
+	position: relative
 	width: 100%
-	border-bottom: 2px solid MediumAquaMarine
-	background: MediumSeaGreen
-ul.navbar
+	height: 60px
 	padding: 0 10em
 	font-family: helvetica
+	border-bottom: 2px solid MediumAquaMarine
+	background: MediumSeaGreen
 	&:before , &:after
 		content: " "
 		display: table
 		clear: both
+
+//nav
+.nav-icon
+	position: relative
+	display: none
+.logo
+	position: relative
+	float: left
+	display: block
+	line-height: 60px
+ul.navbar
+	float: right
 	li
 		float: left
-		padding: 1em
-		border-right: 1px solid MintCream
+		a
+			display: block
+			padding: 0 1em
+			line-height: 60px
+			&:hover
+				color: SaddleBrown
+				background-color: Bisque
 
+//header
+.head-zone
+	
