@@ -1,6 +1,11 @@
 @import "compass/reset"
 @import "compass/css3"
 //全域屬性
+$full : 1200px
+$pcweb : 960px
+$pad : 768px
+$mobile : 480px
+
 *
 	@include box-sizing(border-box)
 	text-decoration: none
@@ -8,19 +13,32 @@ a
 	color: #fff
 	&:hover
 		color: Bisque
-//layout
-.nav-stly
-	position: relative
-	width: 100%
-	height: 60px
-	padding: 0 10em
-	font-family: helvetica
-	border-bottom: 2px solid MediumAquaMarine
-	background: MediumSeaGreen
+
+//去除float
+.clearBoth
 	&:before , &:after
 		content: " "
 		display: table
 		clear: both
+
+//layout
+//版面尺寸RWD
+.gridStyle
+	width: 100%
+	padding: 0 10em
+.nav-stly
+	position: relative
+	height: 60px
+	font-family: helvetica
+	border-bottom: 2px solid MediumAquaMarine
+	background: MediumSeaGreen
+	@extend .clearBoth
+.head-zone
+	@extend .clearBoth
+.main
+	@extend .clearBoth
+.foot-page
+	@extend .clearBoth
 
 //nav
 .nav-icon
