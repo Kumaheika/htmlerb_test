@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= @title ? @title : "預設標題" %></title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+	<nav class="nav-stly">
+		<%= render :partial => "nav" %>
+	</nav>
+	<head class="head-zone">
+		<%= render :partial => "header" %>
+	</head>
+	<div class="content">
+		<%= yield %>
+	</div>
+	<footer class="foot-stly">
+		<%= render :partial => "footer" %>
+	</footer>
+</body>
+</html>

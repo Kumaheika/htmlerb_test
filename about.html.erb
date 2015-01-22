@@ -1,0 +1,9 @@
+<% @title = capture do %>
+	關於我這個人
+<% end %>
+<h1>關於我</h1>
+<ul>
+	<% (1..5).each do |n| %>
+		<li>list <%= n %></li>
+	<% end %>
+</ul>
