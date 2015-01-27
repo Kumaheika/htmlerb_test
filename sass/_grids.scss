@@ -1,0 +1,32 @@
+// Requirements
+// ============
+
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  flow: ltr,
+  math: fluid, // fluid 流變% | static 固定單位，會依照 column-width 設定的單位
+  output: float,
+  gutter-position: after,
+  container: auto, // 指定總寬度
+  container-position: center,
+  columns: 12, // 欄位數量
+  gutters: .25, // 溝相對於欄位的幾分之幾
+  column-width: false, // 指定柵欄寬度
+  global-box-sizing: content-box, // 全域的。
+  last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(#66f, .25), // 柵欄色彩
+    output: background, // background 柵欄出現在背景 | overlay 出現浮動鈕，移過去才會顯示柵欄
+    toggle: top right,  // right | left and top | bottom 若使用 output: overlay 出現浮動鈕的位置
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
