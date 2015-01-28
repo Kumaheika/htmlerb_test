@@ -1,20 +1,31 @@
 @import "compass/reset"
 @import "compass/css3"
-@import "grids"
+// @import "grids"
 
 //全域屬性
 $full : 1200px
 $pcweb : 960px
 $pad : 768px
 $mobile : 480px
+$color-1st: #38a4ab //MediumSeaGreen //master
+$color-2nd: SaddleBrown //mark...
+$color-3rd: #242d3c //SlateGray //tag...
+$color-t1: #38a4ab
+$color-t2: SaddleBrown
+$color-t3: #444
 
 *
 	@include box-sizing(border-box)
 	text-decoration: none
+body
+	background-image: url("../images/bg.png")
 a
 	color: #fff
 	&:hover
 		color: Bisque
+p
+	color: $color-t3
+	line-height: 1.5em
 
 //去除float
 .clearBoth
@@ -22,19 +33,25 @@ a
 		content: " "
 		display: table
 		clear: both
+//下推2em
+.margin-b
+	margin-bottom: 2em
 
-//layout
+//===================layout===================
 //版面尺寸RWD
-.container
-	@include container()
-	width: 100%
-	height: 100vh
-	.box1
-		@include span(4 of 12)
-		background: #333
-	.box2
-		@include span(last 6 of 12)
-		background: SlateGray
+// Susy2--------------------
+// .container
+// 	@include container()
+// 	width: 100%
+// 	height: 100vh
+// 	.box1
+// 		@include span(4 of 12)
+// 		background: #333
+// 	.box2
+// 		@include span(last 6 of 12)
+// 		background: SlateGray
+// Susy2--------------------
+
 .gridStyle
 	width: 100%
 	padding: 0 20em
@@ -42,24 +59,30 @@ a
 	position: relative
 	height: 60px
 	font-family: helvetica
-	border-bottom: 2px solid MediumAquaMarine
-	background: MediumSeaGreen
+	background: $color-1st
 	@extend .clearBoth
+	@extend .margin-b
 .head-zone
 	width: 100%
-	height: 350px
-	overflow: hidden
-	background: LightGray
+	margin: 0 auto
+	// height: 350px
+	// overflow: hidden
+	// background: LightGray
 	@extend .clearBoth
+	@extend .margin-b
 .main
+	position: relative
 	font-family: helvetica
 	@extend .clearBoth
+	@extend .margin-b
 .foot-page
 	height: 40px
 	font-family: helvetica
-	background: SlateGray
+	background: $color-3rd
 	@extend .clearBoth
 
+
+//===================Moudle===================
 //nav
 .nav-icon
 	position: relative
@@ -68,8 +91,10 @@ a
 	position: relative
 	float: left
 	display: block
-	font-size: 20pt
+	font-size: 22pt
+	font-weight: 700
 	line-height: 60px
+	text-transform: uppercase
 ul.navbar
 	float: right
 	li
@@ -80,7 +105,7 @@ ul.navbar
 			padding: 0 1em
 			line-height: 60px
 			&:hover
-				color: SaddleBrown
+				color: $color-2nd
 				background-color: Bisque
 
 //header
@@ -88,12 +113,51 @@ ul.navbar
 
 //slideshow
 .slideshow
-	
+
+//main
+.w-middle, .w-large
+	float: left
+	padding: 15px
+.w-middle
+	width: 30%
+.w-large
+	width: 40%
+.product-link
+	display: block
+.product-style
+	border: 1px solid #dddddd
+	background: #fafafa
+	@include border-radius( 6px )
+	&:hover
+		background: #ddeeee
+.product-group
+	padding: 1em
+	.product-img
+		width: 100%
+		max-height: 180px
+		background: SlateGray
+		overflow: hidden
+		img
+			width: 100%
+
+	.product-title
+		font-size: 1.2em
+		line-height: 3em
+		font-weight: 700
+		color: $color-1st
+	.product-tag
+		font-size: 10pt
+		line-height: 3em
+		border: 4px solid $color-3rd
+		background: $color-3rd
+	p
+		font-size: 11pt
 
 //foot-page
 .foot-tetx
 	margin: 0 auto
-	color: Silver
-	font-size: 10pt
-	text-align: center
-	line-height: 40px
+	p
+		color: $color-t1
+		font-size: 10pt
+		text-align: center
+		line-height: 40px
