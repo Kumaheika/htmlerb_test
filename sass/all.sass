@@ -35,7 +35,7 @@ p
 		clear: both
 //下推2em
 .margin-b
-	margin-bottom: 2em
+	margin-bottom: 10vh
 
 //===================layout===================
 //版面尺寸RWD
@@ -58,10 +58,11 @@ p
 .nav-stly
 	position: relative
 	height: 60px
+	margin-bottom: 2em
 	font-family: helvetica
 	background: $color-1st
 	@extend .clearBoth
-	@extend .margin-b
+	// @extend .margin-b
 .head-zone
 	width: 100%
 	margin: 0 auto
@@ -74,6 +75,11 @@ p
 .main
 	position: relative
 	font-family: helvetica
+	@extend .clearBoth
+	@extend .margin-b
+.aboutMe
+	font-family: helvetica
+	background: $color-1st
 	@extend .clearBoth
 	@extend .margin-b
 .foot-page
@@ -115,7 +121,7 @@ ul.navbar
 //slideshow
 .slideshow
 	.slide-img
-		@include box-shadow ( 0px 0px 10px 10px rgba(20%,20%,40%,0.5) inset )
+		// @include box-shadow ( 0px 0px 10px 10px rgba(20%,20%,40%,0.5) inset )
 	img
 		// width: 20%
 
@@ -158,11 +164,37 @@ ul.navbar
 	p
 		font-size: 11pt
 
+//aboutMe
+.aboutMe-range
+	width: $full
+	margin: 0 auto
+	padding: 2em
+	@extend .clearBoth
+	.ab-myphoto
+		float: left
+		width: 30%
+		padding: 2em
+		text-align: center
+		img
+			max-width: 200px
+			height: auto
+	.ab-title
+		color: #fff
+		font-size: 32pt
+		margin-bottom: .5em
+	.ab-txt
+		float: right
+		width: 70%
+		padding: 2em
+		text-align: left
+		p
+			color: #fff
+			font-size: 14pt
 //foot-page
 .foot-tetx
 	margin: 0 auto
 	p
 		color: $color-t1
-		font-size: 10pt
+		font-size: 11pt
 		text-align: center
 		line-height: 40px
