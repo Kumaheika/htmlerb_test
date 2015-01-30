@@ -82,6 +82,13 @@ p
 	background: $color-1st
 	@extend .clearBoth
 	@extend .margin-b
+.linkpage
+	padding-top: 2em
+	padding-bottom: 2em
+	font-family: helvetica
+	background: #fff
+	@extend .clearBoth
+	@extend .margin-b
 .foot-page
 	height: 40px
 	font-family: helvetica
@@ -190,6 +197,24 @@ ul.navbar
 		p
 			color: #fff
 			font-size: 14pt
+//linkpage
+.linkpage-group
+	float: left
+	width: 25%
+	padding: 1em
+	.linkpage-photo
+		padding: 1em
+		text-align: center
+		border: 1px solid #dddddd
+		background: #fafafa
+		overflow: hidden
+		@include border-radius( 6px )
+		&:hover
+			background: #ddeeee
+		img
+			max-width: 100%
+			max-height: 150px
+
 //foot-page
 .foot-tetx
 	margin: 0 auto

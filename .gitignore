@@ -1,0 +1,4 @@
+# pass folder
+.sass-cache/*
+build_20150128142629/*
+erb/*
