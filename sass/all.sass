@@ -13,6 +13,7 @@ $color-3rd: #242d3c //SlateGray //tag...
 $color-t1: #38a4ab
 $color-t2: SaddleBrown
 $color-t3: #444
+$color-n: SteelBlue
 
 *
 	@include box-sizing(border-box)
@@ -33,6 +34,11 @@ p
 		content: " "
 		display: table
 		clear: both
+//垂直致中
+.vertical-align-style
+	position: relative
+	top: 50%
+	@include transform(translateY(-50%))
 //下推2em
 .margin-b
 	margin-bottom: 10vh
@@ -58,11 +64,17 @@ p
 .nav-stly
 	position: relative
 	height: 60px
-	margin-bottom: 2em
 	font-family: helvetica
 	background: $color-1st
 	@extend .clearBoth
 	// @extend .margin-b
+.banner
+	position: relative
+	max-width: 100%
+	max-height: 380px
+	font-family: helvetica
+	@extend .clearBoth
+	@extend .margin-b
 .head-zone
 	width: 100%
 	margin: 0 auto
@@ -126,30 +138,67 @@ ul.navbar
 .head-zone
 
 //slideshow
-.slideshow
-	.slide-img
+// .slideshow
+	// .slide-img
 		// @include box-shadow ( 0px 0px 10px 10px rgba(20%,20%,40%,0.5) inset )
-	img
+	// img
 		// width: 20%
 
+//banner
+.banner-style
+	.unslider-arrow
+		z-index: 999
+		position: absolute
+		width: 120px
+		height: 120px
+		background: $color-1st
+		opacity: .3
+		@include border-radius(50%)
+		@include transition(all .3s)
+		@extend .vertical-align-style
+		&:hover
+			opacity: .8
+	.prev,
+	.next
+		font-size: 100pt
+		font-weight: 700
+		line-height: 125px
+		text-align: center
+	.prev
+		left: 1%
+	.next
+		right: 1%
+	.banner-img
+		position: relative
+		float: left
+		background: $color-n
+	h1 //banner專用大標題
+		z-index: 10
+		position: absolute
+		top: 10%
+		left: 10%
+		padding: .5em
+		color: #fff
+		font-size: 40pt
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase //大寫
+		opacity: .8
+		&:hover
+			opacity: 1
 //main
-.w-middle, .w-large
+.product-Msize,
 	float: left
 	padding: 15px
-.w-middle
-	width: 30%
-.w-large
-	width: 40%
-.product-link
-	display: block
+.product-Msize
+	width: 25%
 .product-style
+	padding: 1em
 	border: 1px solid #dddddd
 	background: #fafafa
 	@include border-radius( 6px )
 	&:hover
 		background: #ddeeee
-.product-group
-	padding: 1em
 	.product-img
 		width: 100%
 		max-height: 180px
@@ -157,7 +206,6 @@ ul.navbar
 		overflow: hidden
 		img
 			width: 100%
-
 	.product-title
 		font-size: 1.2em
 		line-height: 3em
@@ -166,8 +214,8 @@ ul.navbar
 	.product-tag
 		font-size: 10pt
 		line-height: 3em
-		border: 4px solid $color-3rd
-		background: $color-3rd
+		padding: 5px
+		background: $color-t1
 	p
 		font-size: 11pt
 
@@ -198,22 +246,10 @@ ul.navbar
 			color: #fff
 			font-size: 14pt
 //linkpage
-.linkpage-group
-	float: left
-	width: 25%
-	padding: 1em
-	.linkpage-photo
-		padding: 1em
-		text-align: center
-		border: 1px solid #dddddd
-		background: #fafafa
-		overflow: hidden
-		@include border-radius( 6px )
-		&:hover
-			background: #ddeeee
-		img
-			max-width: 100%
-			max-height: 150px
+.linkpage-size
+	@extend .product-Msize
+	.product-tag
+		background-color: $color-n
 
 //foot-page
 .foot-tetx

@@ -8,9 +8,30 @@
 	<title><%= @title ? @title : "HTML erb + susy2 + git 練習" %></title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="slick/slick.css">
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		    $('.banner').unslider({
+		    	speed: 500,
+		    	delay: 3000,
+		    	complete: function() {},  //A function that gets called after every slide animation
+		    	keys: true, //Enable keyboard (left, right) arrow shortcuts
+		    	dots: true,
+		    	fluid: false  //Support responsive design. May break non-responsive designs
+		    });
+
+		    var unslider = $('.banner').unslider();
+		    var data = unslider.data('unslider');
+		    $('.unslider-arrow').click(function() {
+		        var fn = this.className.split(' ')[1];
+
+		        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+		        unslider.data('unslider')[fn]();
+		    });
+		});
+	</script>
 	<!--[if IE]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -30,18 +51,29 @@
 			<li><a href="#">Contact</a></li>
 		</ul>
 	</nav>
-	<header class="head-zone">
+	<!-- Slider show -->
+	<div class="banner  banner-style">
+		<%= render :partial => "banner" %>
+	</div>
+
+	<!-- 暫時用不到了 -->
+	<!-- <header class="head-zone">
 		<%= render :partial => "head_one" %>
-	</header>
+	</header> -->
+
+	<!-- 前端作品 -->
 	<div class="main  gridStyle">
 		<%= yield %>
 	</div>
+	<!-- 關於我 -->
 	<div class="aboutMe  gridStyle">
 		<%= render :partial => "aboutMe" %>
 	</div>
+	<!-- 設計作品 -->
 	<div class="linkpage  gridStyle">
 		<%= render :partial => "linkpage" %>
 	</div>
+	<!-- 頁尾資訊 -->
 	<footer class="foot-page  gridStyle">
 		<div class="foot-tetx">
 			<p>Designed by Kumaheika</p>
