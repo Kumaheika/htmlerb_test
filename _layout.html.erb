@@ -8,30 +8,12 @@
 	<title><%= @title ? @title : "HTML erb + susy2 + git 練習" %></title>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="slick/slick.css">
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//unslider.com/unslider.js"></script>
-	<script type="text/javascript">
-		$(function() {
-		    $('.banner').unslider({
-		    	speed: 500,
-		    	delay: 3000,
-		    	complete: function() {},  //A function that gets called after every slide animation
-		    	keys: true, //Enable keyboard (left, right) arrow shortcuts
-		    	dots: true,
-		    	fluid: false  //Support responsive design. May break non-responsive designs
-		    });
-
-		    var unslider = $('.banner').unslider();
-		    var data = unslider.data('unslider');
-		    $('.unslider-arrow').click(function() {
-		        var fn = this.className.split(' ')[1];
-
-		        //  Either do unslider.data('unslider').next() or .prev() depending on the className
-		        unslider.data('unslider')[fn]();
-		    });
-		});
-	</script>
+	<script src="jq/unslider-set.js"></script>
+	<script src="jq/top.js"></script>
 	<!--[if IE]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -42,7 +24,8 @@
 		<div class="box1">Yamy</div>
 		<div class="box2"></div>
 	</div> -->
-	<nav class="nav-stly  gridStyle">
+	<div class="top"></div>
+	<nav id="top-bar" class="nav-stly  gridStyle">
 		<div class="nav-icon">>&#9776;</div>
 		<div class="logo"><a href="#">Kumakobo</a></div>
 		<ul class="navbar">
