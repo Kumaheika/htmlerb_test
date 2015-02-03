@@ -126,9 +126,10 @@ p {
   height: 60px;
   font-family: helvetica;
   background: #38a4ab;
+  opacity: 1;
 }
 
-/* line 71, ../sass/all.sass */
+/* line 72, ../sass/all.sass */
 .banner {
   position: relative;
   max-width: 100%;
@@ -136,26 +137,26 @@ p {
   font-family: helvetica;
 }
 
-/* line 78, ../sass/all.sass */
+/* line 79, ../sass/all.sass */
 .head-zone {
   width: 100%;
   margin: 0 auto;
   height: 380px;
 }
 
-/* line 87, ../sass/all.sass */
+/* line 88, ../sass/all.sass */
 .main {
   position: relative;
   font-family: helvetica;
 }
 
-/* line 92, ../sass/all.sass */
+/* line 93, ../sass/all.sass */
 .aboutMe {
   font-family: helvetica;
   background: #38a4ab;
 }
 
-/* line 97, ../sass/all.sass */
+/* line 98, ../sass/all.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -163,20 +164,54 @@ p {
   background: white;
 }
 
-/* line 104, ../sass/all.sass */
+/* line 105, ../sass/all.sass */
 .foot-page {
   height: 40px;
   font-family: helvetica;
   background: #242d3c;
 }
 
-/* line 113, ../sass/all.sass */
+/* line 114, ../sass/all.sass */
+.top {
+  display: block;
+  cursor: pointer;
+  z-index: 999999;
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background: black;
+  opacity: 0.6;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 128, ../sass/all.sass */
+.top:hover {
+  opacity: 1;
+}
+/* line 130, ../sass/all.sass */
+.top::after {
+  content: "^";
+  color: white;
+  font-size: 50pt;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* line 137, ../sass/all.sass */
 .nav-icon {
   position: relative;
   display: none;
 }
 
-/* line 116, ../sass/all.sass */
+/* line 140, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -187,28 +222,28 @@ p {
   text-transform: uppercase;
 }
 
-/* line 124, ../sass/all.sass */
+/* line 148, ../sass/all.sass */
 ul.navbar {
   float: right;
 }
-/* line 126, ../sass/all.sass */
+/* line 150, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 129, ../sass/all.sass */
+/* line 153, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 133, ../sass/all.sass */
+/* line 157, ../sass/all.sass */
 ul.navbar li a:hover {
   color: saddlebrown;
   background-color: bisque;
 }
 
-/* line 149, ../sass/all.sass */
+/* line 173, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -226,11 +261,11 @@ ul.navbar li a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 159, ../sass/all.sass */
+/* line 183, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 161, ../sass/all.sass */
+/* line 185, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -238,21 +273,21 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 167, ../sass/all.sass */
+/* line 191, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 169, ../sass/all.sass */
+/* line 193, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 171, ../sass/all.sass */
+/* line 195, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
   background: steelblue;
 }
-/* line 175, ../sass/all.sass */
+/* line 199, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
@@ -266,23 +301,23 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 187, ../sass/all.sass */
+/* line 211, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
-/* line 190, ../sass/all.sass */
+/* line 214, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   padding: 15px;
 }
 
-/* line 193, ../sass/all.sass */
+/* line 217, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   width: 25%;
 }
 
-/* line 195, ../sass/all.sass */
+/* line 219, ../sass/all.sass */
 .product-style {
   padding: 1em;
   border: 1px solid #dddddd;
@@ -293,87 +328,87 @@ ul.navbar li a:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 200, ../sass/all.sass */
+/* line 224, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 202, ../sass/all.sass */
+/* line 226, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   max-height: 180px;
   background: slategrey;
   overflow: hidden;
 }
-/* line 207, ../sass/all.sass */
+/* line 231, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 209, ../sass/all.sass */
+/* line 233, ../sass/all.sass */
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 214, ../sass/all.sass */
+/* line 238, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 219, ../sass/all.sass */
+/* line 243, ../sass/all.sass */
 .product-style p {
   font-size: 11pt;
 }
 
-/* line 223, ../sass/all.sass */
+/* line 247, ../sass/all.sass */
 .aboutMe-range {
   width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 228, ../sass/all.sass */
+/* line 252, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
-/* line 233, ../sass/all.sass */
+/* line 257, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 236, ../sass/all.sass */
+/* line 260, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
   margin-bottom: 0.5em;
 }
-/* line 240, ../sass/all.sass */
+/* line 264, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
-/* line 245, ../sass/all.sass */
+/* line 269, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   color: white;
   font-size: 14pt;
 }
 
-/* line 251, ../sass/all.sass */
+/* line 275, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 255, ../sass/all.sass */
+/* line 279, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 257, ../sass/all.sass */
+/* line 281, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;

@@ -66,6 +66,7 @@ p
 	height: 60px
 	font-family: helvetica
 	background: $color-1st
+	opacity: 1
 	@extend .clearBoth
 	// @extend .margin-b
 .banner
@@ -109,7 +110,30 @@ p
 
 
 //===================Moudle===================
-//nav
+//Top
+.top
+	display: block
+	cursor: pointer
+	z-index: 999999
+	position: fixed
+	right: 5%
+	bottom: 15%
+	width: 80px
+	height: 80px
+	text-align: center
+	background: black
+	opacity: .6
+	overflow: hidden
+	@include border-radius(50%)
+	&:hover
+		opacity: 1
+	&::after
+		content: "^"
+		color: #fff
+		font-size: 50pt
+		font-weight: 700
+		line-height: 100px
+		text-align: center
 .nav-icon
 	position: relative
 	display: none
