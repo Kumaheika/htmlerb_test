@@ -91,14 +91,30 @@ p {
   line-height: 1.5em;
 }
 
-/* line 33, ../sass/all.sass */
+/* line 30, ../sass/all.sass */
+.strong-t {
+  padding: 0 0.3em;
+  color: khaki;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* line 35, ../sass/all.sass */
+.a-link {
+  margin: 0 0.3em;
+  padding: 0.3em;
+  color: khaki;
+  border: 1px solid khaki;
+}
+
+/* line 43, ../sass/all.sass */
 .clearBoth:before, .nav-stly:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .foot-page:before, .aboutMe-range:before, .clearBoth:after, .nav-stly:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .foot-page:after, .aboutMe-range:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 38, ../sass/all.sass */
+/* line 48, ../sass/all.sass */
 .vertical-align-style, .banner-style .unslider-arrow {
   position: relative;
   top: 50%;
@@ -109,18 +125,18 @@ p {
   transform: translateY(-50%);
 }
 
-/* line 43, ../sass/all.sass */
+/* line 53, ../sass/all.sass */
 .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
   margin-bottom: 10vh;
 }
 
-/* line 61, ../sass/all.sass */
+/* line 71, ../sass/all.sass */
 .gridStyle {
   width: 100%;
   padding: 0 10%;
 }
 
-/* line 64, ../sass/all.sass */
+/* line 74, ../sass/all.sass */
 .nav-stly {
   position: relative;
   height: 60px;
@@ -129,7 +145,7 @@ p {
   opacity: 1;
 }
 
-/* line 72, ../sass/all.sass */
+/* line 82, ../sass/all.sass */
 .banner {
   position: relative;
   max-width: 100%;
@@ -137,26 +153,26 @@ p {
   font-family: helvetica;
 }
 
-/* line 79, ../sass/all.sass */
+/* line 89, ../sass/all.sass */
 .head-zone {
   width: 100%;
   margin: 0 auto;
   height: 380px;
 }
 
-/* line 88, ../sass/all.sass */
+/* line 98, ../sass/all.sass */
 .main {
   position: relative;
   font-family: helvetica;
 }
 
-/* line 93, ../sass/all.sass */
+/* line 103, ../sass/all.sass */
 .aboutMe {
   font-family: helvetica;
   background: #38a4ab;
 }
 
-/* line 98, ../sass/all.sass */
+/* line 108, ../sass/all.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -164,14 +180,14 @@ p {
   background: white;
 }
 
-/* line 105, ../sass/all.sass */
+/* line 115, ../sass/all.sass */
 .foot-page {
   height: 40px;
   font-family: helvetica;
   background: #242d3c;
 }
 
-/* line 114, ../sass/all.sass */
+/* line 124, ../sass/all.sass */
 .top {
   display: block;
   cursor: pointer;
@@ -191,11 +207,11 @@ p {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 128, ../sass/all.sass */
+/* line 138, ../sass/all.sass */
 .top:hover {
   opacity: 1;
 }
-/* line 130, ../sass/all.sass */
+/* line 140, ../sass/all.sass */
 .top::after {
   content: "^";
   color: white;
@@ -205,13 +221,13 @@ p {
   text-align: center;
 }
 
-/* line 137, ../sass/all.sass */
+/* line 147, ../sass/all.sass */
 .nav-icon {
   position: relative;
   display: none;
 }
 
-/* line 140, ../sass/all.sass */
+/* line 150, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -222,28 +238,28 @@ p {
   text-transform: uppercase;
 }
 
-/* line 148, ../sass/all.sass */
+/* line 158, ../sass/all.sass */
 ul.navbar {
   float: right;
 }
-/* line 150, ../sass/all.sass */
+/* line 160, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 153, ../sass/all.sass */
+/* line 163, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 157, ../sass/all.sass */
+/* line 167, ../sass/all.sass */
 ul.navbar li a:hover {
   color: saddlebrown;
   background-color: bisque;
 }
 
-/* line 173, ../sass/all.sass */
+/* line 183, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -261,11 +277,11 @@ ul.navbar li a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 183, ../sass/all.sass */
+/* line 193, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 185, ../sass/all.sass */
+/* line 195, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -273,21 +289,21 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 191, ../sass/all.sass */
+/* line 201, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 193, ../sass/all.sass */
+/* line 203, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 195, ../sass/all.sass */
+/* line 205, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
   background: steelblue;
 }
-/* line 199, ../sass/all.sass */
+/* line 209, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
@@ -301,23 +317,23 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 211, ../sass/all.sass */
+/* line 221, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
-/* line 214, ../sass/all.sass */
+/* line 224, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   padding: 15px;
 }
 
-/* line 217, ../sass/all.sass */
+/* line 227, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   width: 25%;
 }
 
-/* line 219, ../sass/all.sass */
+/* line 229, ../sass/all.sass */
 .product-style {
   padding: 1em;
   border: 1px solid #dddddd;
@@ -328,87 +344,88 @@ ul.navbar li a:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 224, ../sass/all.sass */
+/* line 234, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 226, ../sass/all.sass */
+/* line 236, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   max-height: 180px;
   background: slategrey;
   overflow: hidden;
 }
-/* line 231, ../sass/all.sass */
+/* line 241, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 233, ../sass/all.sass */
+/* line 243, ../sass/all.sass */
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 238, ../sass/all.sass */
+/* line 248, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 243, ../sass/all.sass */
+/* line 253, ../sass/all.sass */
 .product-style p {
   font-size: 11pt;
 }
 
-/* line 247, ../sass/all.sass */
+/* line 257, ../sass/all.sass */
 .aboutMe-range {
   width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 252, ../sass/all.sass */
+/* line 262, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
-/* line 257, ../sass/all.sass */
+/* line 267, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 260, ../sass/all.sass */
+/* line 270, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
   margin-bottom: 0.5em;
 }
-/* line 264, ../sass/all.sass */
+/* line 274, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
-/* line 269, ../sass/all.sass */
+/* line 279, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
+  margin-bottom: 1em;
   color: white;
   font-size: 14pt;
 }
 
-/* line 275, ../sass/all.sass */
+/* line 286, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 279, ../sass/all.sass */
+/* line 290, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 281, ../sass/all.sass */
+/* line 292, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
