@@ -352,80 +352,81 @@ ul.navbar li a:hover {
 .product-style .product-img {
   width: 100%;
   max-height: 180px;
+  border: 1px solid #eeeeee;
   background: slategrey;
   overflow: hidden;
 }
-/* line 241, ../sass/all.sass */
+/* line 242, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 243, ../sass/all.sass */
+/* line 244, ../sass/all.sass */
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 248, ../sass/all.sass */
+/* line 249, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 253, ../sass/all.sass */
+/* line 254, ../sass/all.sass */
 .product-style p {
   font-size: 11pt;
 }
 
-/* line 257, ../sass/all.sass */
+/* line 258, ../sass/all.sass */
 .aboutMe-range {
   width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 262, ../sass/all.sass */
+/* line 263, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
-/* line 267, ../sass/all.sass */
+/* line 268, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 270, ../sass/all.sass */
+/* line 271, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
   margin-bottom: 0.5em;
 }
-/* line 274, ../sass/all.sass */
+/* line 275, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
-/* line 279, ../sass/all.sass */
+/* line 280, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
   color: white;
   font-size: 14pt;
 }
 
-/* line 286, ../sass/all.sass */
+/* line 287, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 290, ../sass/all.sass */
+/* line 291, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 292, ../sass/all.sass */
+/* line 293, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
