@@ -73,12 +73,19 @@ p
 	padding: 0 10%
 .nav-stly
 	position: relative
+	top: 0
 	height: 60px
 	font-family: helvetica
 	background: $color-1st
 	opacity: 1
+	z-index: 999
 	@extend .clearBoth
 	// @extend .margin-b
+.nav-stly-fixed
+	position: fixed
+	top: -120px
+	opacity: .8
+	z-index: 999
 .banner
 	position: relative
 	max-width: 100%
