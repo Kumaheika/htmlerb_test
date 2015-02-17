@@ -4,7 +4,9 @@ $(document).ready(function(){
 			scrollTop: 0
 		},400);
 	});
-	$('.nav-stly').each(function(){
-		
+	//手機模式 收放Menu
+	$('.nav-icon').click(function(){
+		$('ul.navbar').toggleClass('nav-icon-show');
 	});
+	
 });

@@ -130,10 +130,10 @@ p {
   margin-bottom: 10vh;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   /* line 56, ../sass/all.sass */
   .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
-    margin-bottom: 5vh;
+    margin-bottom: 3em;
   }
 }
 /* line 74, ../sass/all.sass */
@@ -159,14 +159,15 @@ p {
   position: relative;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: auto;
   font-family: helvetica;
   background: #38a4ab;
   opacity: 1;
   z-index: 999;
+  overflow: hidden;
 }
 
-/* line 94, ../sass/all.sass */
+/* line 95, ../sass/all.sass */
 .nav-stly-fixed {
   position: fixed;
   top: -120px;
@@ -174,7 +175,7 @@ p {
   z-index: 999;
 }
 
-/* line 99, ../sass/all.sass */
+/* line 100, ../sass/all.sass */
 .banner {
   position: relative;
   max-width: 100%;
@@ -182,26 +183,26 @@ p {
   font-family: helvetica;
 }
 
-/* line 106, ../sass/all.sass */
+/* line 107, ../sass/all.sass */
 .head-zone {
   width: 100%;
   margin: 0 auto;
   height: 380px;
 }
 
-/* line 115, ../sass/all.sass */
+/* line 116, ../sass/all.sass */
 .main {
   position: relative;
   font-family: helvetica;
 }
 
-/* line 120, ../sass/all.sass */
+/* line 121, ../sass/all.sass */
 .aboutMe {
   font-family: helvetica;
   background: #38a4ab;
 }
 
-/* line 125, ../sass/all.sass */
+/* line 126, ../sass/all.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -209,14 +210,14 @@ p {
   background: white;
 }
 
-/* line 132, ../sass/all.sass */
+/* line 133, ../sass/all.sass */
 .foot-page {
   height: 40px;
   font-family: helvetica;
   background: #242d3c;
 }
 
-/* line 141, ../sass/all.sass */
+/* line 142, ../sass/all.sass */
 .top {
   display: block;
   cursor: pointer;
@@ -236,11 +237,11 @@ p {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 155, ../sass/all.sass */
+/* line 156, ../sass/all.sass */
 .top:hover {
   opacity: 1;
 }
-/* line 157, ../sass/all.sass */
+/* line 158, ../sass/all.sass */
 .top::after {
   content: "^";
   color: white;
@@ -251,26 +252,31 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 165, ../sass/all.sass */
+  /* line 166, ../sass/all.sass */
   .top {
     bottom: 5%;
     width: 40px;
     height: 40px;
   }
-  /* line 169, ../sass/all.sass */
+  /* line 170, ../sass/all.sass */
   .top::after {
     content: "TOP";
     font-size: 12pt;
     line-height: 40px;
   }
 }
-/* line 173, ../sass/all.sass */
+/* line 174, ../sass/all.sass */
 .nav-icon {
+  cursor: pointer;
+  float: right;
   position: relative;
   display: none;
+  color: white;
+  font-size: 22pt;
+  line-height: 60px;
 }
 
-/* line 176, ../sass/all.sass */
+/* line 182, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -281,28 +287,51 @@ p {
   text-transform: uppercase;
 }
 
-/* line 184, ../sass/all.sass */
+/* line 190, ../sass/all.sass */
 ul.navbar {
   float: right;
 }
-/* line 186, ../sass/all.sass */
+/* line 192, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 189, ../sass/all.sass */
+/* line 195, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 193, ../sass/all.sass */
+/* line 199, ../sass/all.sass */
 ul.navbar li a:hover {
   color: saddlebrown;
   background-color: bisque;
 }
 
-/* line 209, ../sass/all.sass */
+@media only screen and (max-width: 480px) {
+  /* line 203, ../sass/all.sass */
+  .nav-icon {
+    display: block;
+  }
+
+  /* line 205, ../sass/all.sass */
+  ul.navbar {
+    display: none;
+    width: 100%;
+    background: #38a4ab;
+    z-index: 9999999;
+  }
+  /* line 210, ../sass/all.sass */
+  ul.navbar li {
+    width: 100%;
+  }
+}
+/* line 212, ../sass/all.sass */
+.nav-icon-show {
+  display: block !important;
+}
+
+/* line 226, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -320,11 +349,11 @@ ul.navbar li a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 219, ../sass/all.sass */
+/* line 236, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 221, ../sass/all.sass */
+/* line 238, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -332,21 +361,21 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 227, ../sass/all.sass */
+/* line 244, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 229, ../sass/all.sass */
+/* line 246, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 231, ../sass/all.sass */
+/* line 248, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
   background: steelblue;
 }
-/* line 235, ../sass/all.sass */
+/* line 252, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
@@ -360,12 +389,22 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 247, ../sass/all.sass */
+/* line 264, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
-/* line 250, ../sass/all.sass */
+@media only screen and (max-width: 768px) {
+  /* line 268, ../sass/all.sass */
+  .banner-style .unslider-arrow {
+    display: none;
+  }
+  /* line 270, ../sass/all.sass */
+  .banner-style .banner-img {
+    height: 90vh;
+  }
+}
+/* line 273, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   width: 25%;
@@ -373,24 +412,24 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 255, ../sass/all.sass */
+  /* line 278, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 33.33%;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 258, ../sass/all.sass */
+  /* line 281, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 261, ../sass/all.sass */
+  /* line 284, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 100%;
   }
 }
-/* line 263, ../sass/all.sass */
+/* line 286, ../sass/all.sass */
 .product-style {
   padding: 1em;
   border: 1px solid #dddddd;
@@ -401,11 +440,11 @@ ul.navbar li a:hover {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 268, ../sass/all.sass */
+/* line 291, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 270, ../sass/all.sass */
+/* line 293, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   max-height: 180px;
@@ -413,61 +452,61 @@ ul.navbar li a:hover {
   background: slategrey;
   overflow: hidden;
 }
-/* line 276, ../sass/all.sass */
+/* line 299, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 278, ../sass/all.sass */
+/* line 301, ../sass/all.sass */
 .product-style .product-title {
   font-size: 1.2em;
   line-height: 3em;
   font-weight: 700;
   color: #38a4ab;
 }
-/* line 283, ../sass/all.sass */
+/* line 306, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 288, ../sass/all.sass */
+/* line 311, ../sass/all.sass */
 .product-style p {
   font-size: 11pt;
 }
 
-/* line 292, ../sass/all.sass */
+/* line 315, ../sass/all.sass */
 .aboutMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 297, ../sass/all.sass */
+/* line 320, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 30%;
   padding: 2em;
   text-align: center;
 }
-/* line 302, ../sass/all.sass */
+/* line 325, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 305, ../sass/all.sass */
+/* line 328, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 70%;
   padding: 2em;
   text-align: left;
 }
-/* line 310, ../sass/all.sass */
+/* line 333, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
   color: white;
   font-size: 14pt;
 }
-/* line 314, ../sass/all.sass */
+/* line 337, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
@@ -475,17 +514,17 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 319, ../sass/all.sass */
+  /* line 342, ../sass/all.sass */
   .aboutMe-range {
     padding: 0;
   }
-  /* line 321, ../sass/all.sass */
+  /* line 344, ../sass/all.sass */
   .aboutMe-range .ab-myphoto {
     float: none;
     width: 100%;
     padding: 1em;
   }
-  /* line 325, ../sass/all.sass */
+  /* line 348, ../sass/all.sass */
   .aboutMe-range .ab-txt {
     float: none;
     width: 100%;
@@ -494,22 +533,22 @@ ul.navbar li a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 331, ../sass/all.sass */
+  /* line 354, ../sass/all.sass */
   .ab-txt .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 337, ../sass/all.sass */
+/* line 360, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 341, ../sass/all.sass */
+/* line 364, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 343, ../sass/all.sass */
+/* line 366, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
