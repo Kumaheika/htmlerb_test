@@ -7,14 +7,12 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 400 ){
 			$('.top').fadeIn('fast');
-			$('.nav-stly').addClass('nav-stly-fixed');
-			$('.nav-stly').animate({'top':'0px'},500);
+			$('.nav-stly').addClass('nav-stly-fixed').slideToggle();
 		} else {
-			$('.top').stop().fadeOut('fast');
-			$('.nav-stly').animate({'top':'-120px'},500,function(){
-				$('.nav-stly').removeClass('nav-stly-fixed');
+			$('.top').stop(true).fadeOut('fast');
+			$('.nav-stly').slideUp(300,function(){
+				$(this).removeClass('nav-stly-fixed').addClass('nav-stly');
 			});
-			
 		}
 	});
 });
