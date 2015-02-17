@@ -52,6 +52,9 @@ p
 //下推2em
 .margin-b
 	margin-bottom: 10vh
+@media only screen and (max-width: $full)
+	.margin-b
+		margin-bottom: 5vh
 
 //===================layout===================
 //版面尺寸RWD
@@ -71,9 +74,16 @@ p
 .gridStyle
 	width: 100%
 	padding: 0 10%
+@media only screen and (max-width: $full)
+	.gridStyle
+		padding: 0 5%
+@media only screen and (max-width: $mobile)
+	.gridStyle
+		padding: 0 2%
 .nav-stly
 	position: relative
 	top: 0
+	width: 100%
 	height: 60px
 	font-family: helvetica
 	background: $color-1st
@@ -151,6 +161,15 @@ p
 		font-weight: 700
 		line-height: 100px
 		text-align: center
+@media only screen and (max-width: $mobile)
+	.top
+		bottom: 5%
+		width: 40px
+		height: 40px
+		&::after
+			content: "TOP"
+			font-size: 12pt
+			line-height: 40px
 .nav-icon
 	position: relative
 	display: none
@@ -230,9 +249,17 @@ ul.navbar
 //main
 .product-Msize,
 	float: left
-	padding: 15px
-.product-Msize
 	width: 25%
+	padding: 15px
+@media only screen and (max-width: $full)
+	.product-Msize,
+		width: 33.33%
+@media only screen and (max-width: $pcweb)
+	.product-Msize,
+		width: 50%
+@media only screen and (max-width: $mobile)
+	.product-Msize,
+		width: 100%
 .product-style
 	padding: 1em
 	border: 1px solid #dddddd
@@ -263,7 +290,7 @@ ul.navbar
 
 //aboutMe
 .aboutMe-range
-	width: $full
+	width: 100%
 	margin: 0 auto
 	padding: 2em
 	@extend .clearBoth
@@ -275,10 +302,6 @@ ul.navbar
 		img
 			max-width: 200px
 			height: auto
-	.ab-title
-		color: #fff
-		font-size: 32pt
-		margin-bottom: .5em
 	.ab-txt
 		float: right
 		width: 70%
@@ -288,6 +311,26 @@ ul.navbar
 			margin-bottom: 1em
 			color: #fff
 			font-size: 14pt
+	.ab-title
+		color: #fff
+		font-size: 32pt
+		margin-bottom: .5em
+@media only screen and (max-width: $pad)
+	.aboutMe-range
+		padding: 0
+		.ab-myphoto
+			float: none
+			width: 100%
+			padding: 1em
+		.ab-txt
+			float: none
+			width: 100%
+			padding: 0 1em 1em
+			text-align: center
+@media only screen and (max-width: $mobile)
+	.ab-txt .a-link
+		display: block
+		margin-top: .5em
 //linkpage
 .linkpage-size
 	@extend .product-Msize
