@@ -4,6 +4,7 @@ $(document).ready(function(){
 			scrollTop: 0
 		},400);
 	});
+<<<<<<< HEAD
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 400 ){
 			$('.top').fadeIn('fast');
@@ -14,5 +15,11 @@ $(document).ready(function(){
 				$(this).removeClass('nav-stly-fixed').addClass('nav-stly');
 			});
 		}
+=======
+	//手機模式 收放Menu
+	$('.nav-icon').click(function(){
+		$('ul.navbar').toggleClass('nav-icon-show');
+>>>>>>> da30fecd61c4615bec7263ffbff269c853fa87e1
 	});
+	
 });
