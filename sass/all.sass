@@ -8,8 +8,9 @@ $pcweb : 960px
 $pad : 768px
 $mobile : 480px
 $color-1st: #38a4ab //MediumSeaGreen //master
-$color-2nd: SaddleBrown //mark...
+$color-2nd: SaddleBrown //mark... nav-text:hover
 $color-3rd: #242d3c //SlateGray //tag...
+$color-4th: Khaki //text:hover
 $color-t1: #38a4ab
 $color-t2: SaddleBrown
 $color-t3: #444
@@ -20,24 +21,15 @@ $color-n: SteelBlue
 	text-decoration: none
 body
 	padding-top: 60px
+	font-family: helvetica,"微軟正黑體"
 	background-image: url("../images/bg.png")
 a
 	color: #fff
 	&:hover
-		color: Bisque
+		color: $color-4th
 p
 	color: $color-t3
 	line-height: 1.5em
-.strong-t
-	padding: 0 0.3em
-	color: Khaki
-	font-size: 1.5em
-	font-weight: 700
-.a-link
-	margin: 0 0.3em
-	padding: 0.3em
-	color: Khaki
-	border: 1px solid Khaki
 
 //去除float
 .clearBoth
@@ -57,7 +49,7 @@ p
 	.margin-b
 		margin-bottom: 3em
 
-//===================layout===================
+//========================== layout ==========================
 //版面尺寸RWD
 // Susy2--------------------
 // .container
@@ -86,7 +78,6 @@ p
 	top: 0
 	width: 100%
 	height: auto
-	font-family: helvetica
 	background: $color-1st
 	opacity: 1
 	z-index: 999
@@ -102,7 +93,6 @@ p
 	position: relative
 	max-width: 100%
 	max-height: 380px
-	font-family: helvetica
 	@extend .clearBoth
 	@extend .margin-b
 .head-zone
@@ -116,29 +106,39 @@ p
 	@extend .margin-b
 .main
 	position: relative
-	font-family: helvetica
 	@extend .clearBoth
 	@extend .margin-b
 .aboutMe
-	font-family: helvetica
 	background: $color-1st
 	@extend .clearBoth
 	@extend .margin-b
 .linkpage
 	padding-top: 2em
 	padding-bottom: 2em
-	font-family: helvetica
 	background: #fff
 	@extend .clearBoth
 	@extend .margin-b
 .foot-page
 	height: 40px
-	font-family: helvetica
 	background: $color-3rd
 	@extend .clearBoth
 
-
-//===================Moudle===================
+//========================== Moudle ==========================
+.strong-t
+	padding: 0
+	color: $color-4th
+	font-size: 1.3em
+	font-weight: 700
+	line-height: 2em
+.a-link
+	margin: 0 0.3em
+	padding: 0.3em
+	color: $color-4th
+	border: 1px solid $color-4th
+	border-radius: 10px
+	&:hover
+		color: $color-1st
+		background: $color-4th
 //Top
 .top
 	display: block
@@ -199,7 +199,7 @@ ul.navbar
 			line-height: 60px
 			&:hover
 				color: $color-2nd
-				background-color: Bisque
+				background-color: $color-4th
 @media only screen and (max-width: $mobile)
 	.nav-icon
 		display: block
@@ -285,15 +285,17 @@ ul.navbar
 	.product-Msize,
 		width: 100%
 .product-style
+	height: 400px
 	padding: 1em
 	border: 1px solid #dddddd
 	background: #fafafa
+	overflow: hidden
 	@include border-radius( 6px )
 	&:hover
 		background: #ddeeee
 	.product-img
 		width: 100%
-		max-height: 180px
+		height: auto
 		border: 1px solid #eee
 		background: SlateGray
 		overflow: hidden
@@ -311,7 +313,9 @@ ul.navbar
 		background: $color-t1
 	p
 		font-size: 11pt
-
+@media only screen and (max-width: $mobile)
+	.product-style
+		height: auto
 //aboutMe
 .aboutMe-range
 	width: 100%
@@ -335,6 +339,7 @@ ul.navbar
 			margin-bottom: 1em
 			color: #fff
 			font-size: 14pt
+			letter-spacing: 0.05em
 	.ab-title
 		color: #fff
 		font-size: 32pt
