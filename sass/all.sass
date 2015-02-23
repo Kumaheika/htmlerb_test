@@ -174,6 +174,7 @@ p
 			line-height: 40px
 .nav-icon
 	cursor: pointer
+	height: auto
 	float: right
 	position: relative
 	display: none /*開關*/
@@ -189,6 +190,7 @@ p
 	line-height: 60px
 	text-transform: uppercase
 ul.navbar
+	display: block
 	float: right
 	li
 		float: left
@@ -200,6 +202,9 @@ ul.navbar
 			&:hover
 				color: $color-2nd
 				background-color: $color-4th
+@media only screen and (max-width: $full)
+	ul.navbar
+		display: block
 @media only screen and (max-width: $mobile)
 	.nav-icon
 		display: block
@@ -286,26 +291,28 @@ ul.navbar
 		width: 100%
 .product-style
 	height: 450px
-	padding: 1em
+	// padding: 1em
 	border: 1px solid #dddddd
 	background: #fafafa
 	overflow: hidden
-	@include border-radius( 6px )
+	@include border-radius( 10px )
 	&:hover
 		background: #ddeeee
 	.product-img
 		width: 100%
 		height: auto
-		border: 1px solid #eee
 		background: SlateGray
 		overflow: hidden
 		img
 			width: 100%
+	.product-article
+		padding: 0 1em 1em 1em
 	.product-title
 		padding: 1em 0
 		font-size: 1.2em
 		line-height: 1em
 		font-weight: 700
+		text-align: center
 		color: $color-1st
 	.product-tag
 		font-size: 10pt

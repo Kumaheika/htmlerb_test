@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$('.nav-icon').click(function(){
 		$('ul.navbar').toggleClass('nav-icon-show');
 	});
-	//平滑位移
+	//平滑位移function
 	function goTag($classTag){
 		var position01 = $($classTag).offset();
 		var y01 = position01.top;
