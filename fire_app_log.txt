@@ -2182,3 +2182,9 @@
 2015-02-23 22:15:10      Copy /slick/fonts/slick.svg
 2015-02-23 22:15:10      Copy /slick/fonts/slick.ttf
 2015-02-23 22:15:10      Copy /slick/fonts/slick.woff
+2015-02-24 09:06:46 overwrite css/all.css 
+2015-02-24 09:07:05 overwrite css/all.css 
+2015-02-24 15:08:11     error sass/all.sass (Line 33: Invalid CSS after ".box-1 ": expected selector, was "{")
+2015-02-24 15:08:11 overwrite css/all.css 
+2015-02-24 15:08:21 overwrite css/all.css 
+2015-02-24 15:09:52 overwrite css/all.css 

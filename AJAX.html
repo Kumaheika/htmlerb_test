@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
 	/* Yes I'm inline, but for simplicities sake let it go :) */
 	* {
 		padding:0;
@@ -37,39 +36,40 @@
 	/***********************/
 	/* Ajax Loader styles */
 	.ajax_loader {background: url("images/spinner_squares_circle.gif") no-repeat center center transparent;width:100%;height:100%;}
-		.blue-loader .ajax_loader {background: url("images/ajax-loader_blue.gif") no-repeat center center transparent;}
-	</style>
-	<script src="//code.jquery.com/jquery-migrate-1.11.2.min.js"></script>
-	<script id="loader" src="jq/script.js" type="text/javascript"></script>
-	<script>
-		$(document).ready(function() {
-			var box1, box2, box3, box4; 
-			
-			$(".box-1").live('click', function(){	
-				box1 = new ajaxLoader(this);
-			});
-			
-			$(".box-2").live('click', function(){	
-				box2 = new ajaxLoader(this, {classOveride: 'blue-loader'});
-			});
-			
-			$(".box-3").live('click', function(){	
-				box3 = new ajaxLoader(this, {classOveride: 'blue-loader', bgColor: '#000'});
-			});
-			
-			$(".box-4").live('click', function(){	
-				box4 = new ajaxLoader(this, {classOveride: 'blue-loader', bgColor: '#000', opacity: '0.3'});
-			});
-			
-			$(".btn").live('click', function(){	
-				if (box1) box1.remove();
-				if (box2) box2.remove();
-				if (box3) box3.remove();
-				if (box4) box4.remove();
-			});
-			
+	.blue-loader .ajax_loader {background: url("images/ajax-loader_blue.gif") no-repeat center center transparent;}
+</style>
+<script src="//code.jquery.com/jquery-migrate-1.11.2.min.js"></script>
+<script id="loader" src="jq/script.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+		var box1, box2, box3, box4; 
+		
+		$(".box-1").live('click', function(){	
+			box1 = new ajaxLoader(this);
 		});
-	</script>
+		
+		$(".box-2").live('click', function(){	
+			box2 = new ajaxLoader(this, {classOveride: 'blue-loader'});
+		});
+		
+		$(".box-3").live('click', function(){	
+			box3 = new ajaxLoader(this, {classOveride: 'blue-loader', bgColor: '#000'});
+		});
+		
+		$(".box-4").live('click', function(){	
+			box4 = new ajaxLoader(this, {classOveride: 'blue-loader', bgColor: '#000', opacity: '0.3'});
+		});
+		
+		$(".btn").live('click', function(){	
+			if (box1) box1.remove();
+			if (box2) box2.remove();
+			if (box3) box3.remove();
+			if (box4) box4.remove();
+		});
+		
+	});
+</script>
+<title>Ajax Loader - A Plus Design</title>
 </head>
 <body>
 	<h1>Ajax loader - Click inside the boxes to load the ajax loader :)</h1>
