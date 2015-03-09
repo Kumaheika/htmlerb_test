@@ -1,59 +1,30 @@
 <div class="slideshow">
-	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
-	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
-	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
-	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
-	<div class="slide-img"><img src="images/slide_01.png" alt="p01"></div>
-	<div class="slide-img"><img src="images/slide_02.png" alt="p02"></div>
-	<div class="slide-img"><img src="images/slide_03.png" alt="p03"></div>
-	<div class="slide-img"><img src="images/slide_04.png" alt="p04"></div>
+	<div class="slide-img  slide-right">
+		<img src="images/slide_01.png" alt="p01">
+	</div>
+	<div class="slide-img  slide-left">
+		<img src="images/slide_02.png" alt="p02">
+	</div>
+	<div class="slide-img  slide-right">
+		<img src="images/slide_03.png" alt="p03">
+	</div>
+</div>
+<div class="slideshow-mobile">
 </div>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.slideshow').slick({
-			// dots: true, //小點控制器
-			infinite: true, //循環
-			speed: 300, //速度
-			slidesToShow: 4, //畫面同時顯示張數
-			// slidesToScroll: 4, //換頁切換張數
-			arrows: false, // 箭頭
-			// fade: true,
-			// slide: 'div',
-			// cssEase: 'linear',
-			// slidesToShow: 1, //一張一個 dot
-			centerMode: true, //一張一個 dot ，該dot置中
-			// variableWidth: true, //一張一個 dot
-			// adaptiveHeight: true, //隨著該div縮放尺寸
-			autoplay: true, //自動撥放
-			autoplaySpeed: 2000, //自動撥放間隔時間(毫秒)
+	$(function(){
+		var $slideshow = $('.slideshow'),
+		    $slides = $slideshow.find('.slide-img'),
+		    $counter = $slides.length, //求目前所有 slides 數量
+		    nowPic = 0; //起始標號
 
-
-			// responsive: [ //也可以用 breakpoint 做RWD切換
-		 //    {
-		 //      breakpoint: 1600, //1600以下
-		 //      settings: {
-		 //        slidesToShow: 5,
-		 //        slidesToScroll: 4,
-		 //        infinite: true,
-		 //        dots: true
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 1024,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2
-		 //      }
-		 //    },
-		 //    {
-		 //      breakpoint: 480,
-		 //      settings: {
-		 //        slidesToShow: 1,
-		 //        slidesToScroll: 1
-		 //      }
-		 //    }
-		 //  ]
-		  //收尾
-		});
+		$slides.eq(nowPic).fadeIn('slow');
+		setInterval( slideGo , 4500 );
+		function slideGo(){
+			var nextPic = ( nowPic +1 ) % $counter; //用求餘數來計算下一張標號
+			$slides.eq(nowPic).fadeOut('fast');
+			$slides.eq(nextPic).fadeIn('slow');
+			nowPic = nextPic;
+		};
 	});
 </script>

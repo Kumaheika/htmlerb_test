@@ -14,18 +14,40 @@
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//unslider.com/unslider.js"></script>
 	<script src="jq/unslider-set.js"></script>
+	<script src="jq/jquery.colorbox.js"></script>
 	<!-- Top功能 -->
 	<script src="jq/top.js"></script>
+	<!-- colorbox專用 -->
+	<script>
+		$(document).ready(function(){
+			//Examples of how to assign the Colorbox event to elements
+			$(".group1").colorbox({rel:'group1'});
+			$(".ajax").colorbox();
+			$(".iframe").colorbox({iframe:true, width:"60%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+
+			$('.non-retina').colorbox({rel:'group5', transition:'none'})
+			$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	</script>
 	<!--[if IE]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
-	<!-- <div class="container">
-		純粹 Susy 設定@@@@
-		<div class="box1">Yamy</div>
-		<div class="box2"></div>
-	</div> -->
 	<div class="top"></div>
 	<nav id="top-bar" class="nav-stly  gridStyle">
 		<div class="logo"><a href="#">Kumakobo</a></div>
@@ -34,17 +56,18 @@
 			<li><a class="btn-aboutMe" href="#">About</a></li>
 			<li><a class="btn-linkpage" href="#">Product</a></li>
 			<li><a class="btn-about" href="#">Contact</a></li>
+			<li><a class="btn-github" href="https://github.com/Kumaheika/Kumaheika.github.io">Github</a></li>
 		</ul>
 	</nav>
-	<!-- Slider show -->
-	<div class="banner  banner-style">
-		<%= render :partial => "banner" %>
-	</div>
 
 	<!-- 暫時用不到了 -->
-	<!-- <header class="head-zone">
+	<!-- Slider show -->
+	<!-- <div class="banner  banner-style">
+		<%= render :partial => "banner" %>
+	</div> -->
+	<div class="head-zone">
 		<%= render :partial => "head_one" %>
-	</header> -->
+	</div>
 
 	<!-- 前端作品 -->
 	<div class="main  gridStyle">
