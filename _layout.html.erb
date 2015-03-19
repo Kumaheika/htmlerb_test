@@ -43,6 +43,10 @@
 			});
 		});
 	</script>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 	<!--[if IE]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -80,6 +84,10 @@
 	<!-- 設計作品 -->
 	<div class="linkpage  gridStyle">
 		<%= render :partial => "linkpage" %>
+	</div>
+	<!-- 聯絡方式 -->
+	<div class="contactMe  gridStyle">
+		<%= render :partial => "contactMe" %>
 	</div>
 	<!-- 頁尾資訊 -->
 	<footer class="foot-page  gridStyle">

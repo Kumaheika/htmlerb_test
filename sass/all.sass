@@ -1,6 +1,6 @@
-@import "compass/reset"
-@import "compass/css3"
-@import "colorbox"
+@import compass/reset
+@import compass/css3
+@import colorbox
 // @import "grids"
 
 //全域屬性
@@ -31,22 +31,6 @@ a
 p
 	color: $color-t3
 	line-height: 1.5em
-.box-1
-	position: relative
-	overflow: hidden
-	width: 400px
-	height: 200px
-	border: 1px dashed #900
-	text-align: center
-	margin: 5px
-	float: left
-.ajax_loader
-	background: url("spinner_squares_circle.gif") no-repeat center center transparent
-	width: 100%
-	height: 100%
-.blue-loader .ajax_loader
-	background: url("ajax-loader_blue.gif") no-repeat center center transparent
-	
 //去除float
 .clearBoth
 	&:before , &:after
@@ -131,6 +115,8 @@ p
 	@extend .margin-b
 .aboutMe
 	background: $color-1st
+	background: url("../images/contact_bg.png") rgba(35, 45, 60, 1) top center
+	background-attachment: fixed
 	@extend .clearBoth
 	@extend .margin-b
 .linkpage
@@ -139,6 +125,11 @@ p
 	background: #fff
 	@extend .clearBoth
 	@extend .margin-b
+.contactMe
+	padding-bottom: 3em
+	background: url("../images/contact_bg.png") rgba(35, 45, 60, 1) top center
+	background-attachment: fixed
+	@extend .clearBoth
 .foot-page
 	height: 40px
 	background: $color-3rd
@@ -424,6 +415,52 @@ ul.navbar
 	@extend .product-Msize
 	.product-tag
 		background-color: $color-n
+//contactMe
+.contactMe-range
+	width: 100%
+	margin: 0 auto
+	padding: 2em
+	&::after
+		@extend .clearBoth
+	.conta-form
+		float: right
+		width: 50%
+		padding: 2em
+		// background: rgba(0, 0, 0, .4)
+	.form-type
+		width: 100%
+		padding: 1em
+		// background: rgba(0, 0, 0, .4)
+		input, textarea
+			width: 100%
+			padding: .5em
+			color: #fff
+			font-family: helvetica,"微軟正黑體"
+			font-size: 20pt
+			letter-spacing: 0.03em
+			background: none
+			border: 1px solid #fff
+			+transition(.3s)
+			&:focus
+				color: #777 !important
+				background: #fff
+				+transition(.3s)
+@media only screen and (max-width: $pad)
+	.contactMe-range
+		padding: 0
+		.ab-myphoto
+			float: none
+			width: 100%
+			padding: 1em
+		.ab-txt
+			float: none
+			width: 100%
+			padding: 0 1em 1em
+			text-align: center
+@media only screen and (max-width: $mobile)
+	.ab-txt .a-link
+		display: block
+		margin-top: .5em
 
 //foot-page
 .foot-tetx
