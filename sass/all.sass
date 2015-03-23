@@ -1,6 +1,8 @@
 @import compass/reset
 @import compass/css3
 @import colorbox
+@import svg
+@import url(http://fonts.googleapis.com/css?family=Exo)
 // @import "grids"
 
 //全域屬性
@@ -31,6 +33,15 @@ a
 p
 	color: $color-t3
 	line-height: 1.5em
+h1
+	font-family: 'Exo',helvetica,"微軟正黑體"
+	margin-bottom: .5em
+	padding: 1em
+	color: #fff
+	font-size: 40pt
+	font-weight: 700
+	// text-transform: uppercase //大寫
+	text-align: center
 //去除float
 .clearBoth
 	&:before , &:after
@@ -151,6 +162,10 @@ p
 	&:hover
 		color: $color-1st
 		background: $color-4th
+@media only screen and (max-width: $mobile)
+	.a-link
+		display: block
+		margin-top: .5em
 //Top
 .top
 	display: block
@@ -422,45 +437,57 @@ ul.navbar
 	padding: 2em
 	&::after
 		@extend .clearBoth
-	.conta-form
+	.conta-form, .conta-adress
 		float: right
-		width: 50%
-		padding: 2em
+		width: 55%
+		padding: 1em
 		// background: rgba(0, 0, 0, .4)
 	.form-type
 		width: 100%
-		padding: 1em
+		margin-bottom: 2em
+		// padding: 1em
 		// background: rgba(0, 0, 0, .4)
-		input, textarea
+		input, textarea, button
 			width: 100%
 			padding: .5em
 			color: #fff
 			font-family: helvetica,"微軟正黑體"
 			font-size: 20pt
 			letter-spacing: 0.03em
-			background: none
+			background: rgba(0, 0, 0, .3)
 			border: 1px solid #fff
 			+transition(.3s)
 			&:focus
-				color: #777 !important
+				color: $color-t3
 				background: #fff
 				+transition(.3s)
-@media only screen and (max-width: $pad)
-	.contactMe-range
-		padding: 0
-		.ab-myphoto
-			float: none
-			width: 100%
-			padding: 1em
-		.ab-txt
-			float: none
-			width: 100%
-			padding: 0 1em 1em
+		button
+			cursor: pointer
+			&:hover
+				color: $color-1st
+				background: $color-4th
+				+transition(.3s)
+	.conta-adress
+		width: 40%
+		padding: 1em
+		text-align: center
+		font-family: helvetica,"微軟正黑體"
+		h2
+			color: #fff
+			font-size: 2em
+			padding: .5em
+		a
+			padding: 0 .5em
+		p
+			padding: .5em
+			color: #fff
+		.myphoto
+			max-width: 40%
+			height: auto
 			text-align: center
+@media only screen and (max-width: $pad)
+
 @media only screen and (max-width: $mobile)
-	.ab-txt .a-link
-		display: block
-		margin-top: .5em
 
 //foot-page
 .foot-tetx

@@ -11,6 +11,10 @@ $(document).ready(function(){
     $(".btn-linkpage").click(function () {
     	goTag('.linkpage');
     });
+    //聯絡我
+	$(".btn-contactMe").click(function () {
+		goTag('.contactMe');
+    });
     //卷軸超過N Top fadeIn()
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 400 ){
