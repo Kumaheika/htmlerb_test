@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Exo);
-/* line 17, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Users/kuma/Desktop/fire.app.windows.v1.12/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Users/KumaHeika/Desktop/fire.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -376,6 +376,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 8, ../sass/_svg.sass */
 .icon-youtube4 {
   width: 2.50879em;
+}
+
+/* line 10, ../sass/_svg.sass */
+.icon-radius {
+  width: 4em;
+  height: 4em;
+  margin: 2em;
+}
+
+/* line 14, ../sass/_svg.sass */
+.icon-co-white {
+  color: white;
 }
 
 /* line 22, ../sass/all.sass */
@@ -918,7 +930,7 @@ ul.navbar li a:hover {
 /* line 390, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
-  width: 30%;
+  width: 40%;
   padding: 2em;
   text-align: center;
 }
@@ -930,7 +942,7 @@ ul.navbar li a:hover {
 /* line 398, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
-  width: 70%;
+  width: 60%;
   padding: 2em;
   text-align: left;
 }
@@ -958,45 +970,52 @@ ul.navbar li a:hover {
     float: none;
     width: 100%;
     padding: 1em;
+    margin-bottom: 1em;
   }
-  /* line 419, ../sass/all.sass */
+  /* line 420, ../sass/all.sass */
   .aboutMe-range .ab-txt {
     float: none;
     width: 100%;
     padding: 0 1em 1em;
     text-align: center;
   }
+  /* line 425, ../sass/all.sass */
+  .aboutMe-range .icon-radius {
+    width: 30%;
+    max-height: 3em;
+    margin: 1%;
+  }
 }
 @media only screen and (max-width: 480px) {
-  /* line 425, ../sass/all.sass */
+  /* line 430, ../sass/all.sass */
   .ab-txt .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 431, ../sass/all.sass */
+/* line 436, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 434, ../sass/all.sass */
+/* line 439, ../sass/all.sass */
 .contactMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 440, ../sass/all.sass */
+/* line 445, ../sass/all.sass */
 .contactMe-range .conta-form, .contactMe-range .conta-adress {
   float: right;
   width: 55%;
   padding: 1em;
 }
-/* line 445, ../sass/all.sass */
+/* line 450, ../sass/all.sass */
 .contactMe-range .form-type {
   width: 100%;
   margin-bottom: 2em;
 }
-/* line 450, ../sass/all.sass */
+/* line 455, ../sass/all.sass */
 .contactMe-range .form-type input, .contactMe-range .form-type textarea, .contactMe-range .form-type button {
   width: 100%;
   padding: 0.5em;
@@ -1011,7 +1030,7 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 460, ../sass/all.sass */
+/* line 465, ../sass/all.sass */
 .contactMe-range .form-type input:focus, .contactMe-range .form-type textarea:focus, .contactMe-range .form-type button:focus {
   color: #444444;
   background: white;
@@ -1020,11 +1039,11 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 464, ../sass/all.sass */
+/* line 469, ../sass/all.sass */
 .contactMe-range .form-type button {
   cursor: pointer;
 }
-/* line 466, ../sass/all.sass */
+/* line 471, ../sass/all.sass */
 .contactMe-range .form-type button:hover {
   color: #38a4ab;
   background: khaki;
@@ -1033,40 +1052,57 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 470, ../sass/all.sass */
+/* line 475, ../sass/all.sass */
 .contactMe-range .conta-adress {
   width: 40%;
   padding: 1em;
   text-align: center;
   font-family: helvetica, "微軟正黑體";
 }
-/* line 475, ../sass/all.sass */
+/* line 480, ../sass/all.sass */
 .contactMe-range .conta-adress h2 {
   color: white;
   font-size: 2em;
   padding: 0.5em;
 }
-/* line 479, ../sass/all.sass */
+/* line 484, ../sass/all.sass */
 .contactMe-range .conta-adress a {
   padding: 0 0.5em;
 }
-/* line 481, ../sass/all.sass */
+/* line 486, ../sass/all.sass */
 .contactMe-range .conta-adress p {
   padding: 0.5em;
   color: white;
 }
-/* line 484, ../sass/all.sass */
+/* line 489, ../sass/all.sass */
 .contactMe-range .conta-adress .myphoto {
-  max-width: 40%;
+  max-width: 200px;
   height: auto;
   text-align: center;
 }
 
-/* line 493, ../sass/all.sass */
+@media only screen and (max-width: 768px) {
+  /* line 494, ../sass/all.sass */
+  .contactMe-range {
+    padding: 0;
+  }
+  /* line 496, ../sass/all.sass */
+  .contactMe-range .conta-form, .contactMe-range .conta-adress {
+    float: none;
+    width: 100%;
+    padding: 1em;
+  }
+  /* line 501, ../sass/all.sass */
+  .contactMe-range .conta-adress .myphoto {
+    max-width: 200px;
+    height: auto;
+  }
+}
+/* line 505, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 495, ../sass/all.sass */
+/* line 507, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;
