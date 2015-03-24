@@ -389,7 +389,7 @@ ul.navbar
 	@extend .clearBoth
 	.ab-myphoto
 		float: left
-		width: 30%
+		width: 40%
 		padding: 2em
 		text-align: center
 		img
@@ -397,7 +397,7 @@ ul.navbar
 			height: auto
 	.ab-txt
 		float: right
-		width: 70%
+		width: 60%
 		padding: 2em
 		text-align: left
 		p
@@ -416,11 +416,16 @@ ul.navbar
 			float: none
 			width: 100%
 			padding: 1em
+			margin-bottom: 1em
 		.ab-txt
 			float: none
 			width: 100%
 			padding: 0 1em 1em
 			text-align: center
+		.icon-radius
+			width: 30%
+			max-height: 3em
+			margin: 1%
 @media only screen and (max-width: $mobile)
 	.ab-txt .a-link
 		display: block
@@ -482,13 +487,20 @@ ul.navbar
 			padding: .5em
 			color: #fff
 		.myphoto
-			max-width: 40%
+			max-width: 200px
 			height: auto
 			text-align: center
 @media only screen and (max-width: $pad)
-
-@media only screen and (max-width: $mobile)
-
+	.contactMe-range
+		padding: 0
+		.conta-form, .conta-adress
+			float: none
+			width: 100%
+			padding: 1em
+		.conta-adress
+			.myphoto
+				max-width: 200px
+				height: auto
 //foot-page
 .foot-tetx
 	margin: 0 auto
