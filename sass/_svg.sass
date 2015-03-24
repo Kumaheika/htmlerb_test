@@ -1,5 +1,4 @@
 .icon
-	display: inline-block
 	width: 1em
 	height: 1em
 	fill: currentColor
@@ -8,8 +7,32 @@
 .icon-youtube4
 	width: 2.5087890625em
 .icon-radius
-	width: 4em
-	height: 4em
-	margin: 2em
-.icon-co-white
-	color: #fff
+	position: relative
+	display: inline-block
+	width: 120px
+	height: 120px
+	margin: 0 1em 1em 0
+	background: rgba(0, 0, 0, .3)
+	border: 2px solid #fff
+	+border-radius(50%)
+	&:hover
+		background: $color-4th
+		border: none
+		.icon
+			color: $color-1st
+	.icon
+		position: absolute
+		display: block
+		width: 4em
+		height: 4em
+		left: 0
+		right: 0
+		margin: auto
+		color: #fff
+@media only screen and (max-width: $pad)
+	.icon-radius
+		width: 90px
+		height: 90px
+		.icon
+			width: 3em
+			height: 3em

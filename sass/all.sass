@@ -1,7 +1,6 @@
 @import compass/reset
 @import compass/css3
 @import colorbox
-@import svg
 @import url(http://fonts.googleapis.com/css?family=Exo)
 // @import "grids"
 
@@ -18,6 +17,9 @@ $color-t1: #38a4ab
 $color-t2: SaddleBrown
 $color-t3: #444
 $color-n: SteelBlue
+
+//SVG圖標
+@import svg
 
 *
 	@include box-sizing(border-box)
@@ -422,10 +424,6 @@ ul.navbar
 			width: 100%
 			padding: 0 1em 1em
 			text-align: center
-		.icon-radius
-			width: 30%
-			max-height: 3em
-			margin: 1%
 @media only screen and (max-width: $mobile)
 	.ab-txt .a-link
 		display: block
