@@ -425,7 +425,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: 3em;
   }
 }
-/* line 24, ../sass/all.sass */
+/* line 25, ../sass/all.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -433,29 +433,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
 }
 
-/* line 27, ../sass/all.sass */
+/* line 28, ../sass/all.sass */
 body {
-  padding-top: 60px;
   font-family: helvetica, "微軟正黑體";
   background-image: url("../images/bg.png");
 }
 
-/* line 31, ../sass/all.sass */
+/* line 32, ../sass/all.sass */
 a {
   color: white;
 }
-/* line 33, ../sass/all.sass */
+/* line 34, ../sass/all.sass */
 a:hover {
   color: khaki;
 }
 
-/* line 35, ../sass/all.sass */
+/* line 36, ../sass/all.sass */
 p {
   color: #444444;
   line-height: 1.5em;
 }
 
-/* line 38, ../sass/all.sass */
+/* line 39, ../sass/all.sass */
 h1 {
   font-family: "Exo", helvetica, "微軟正黑體";
   margin-bottom: 0.5em;
@@ -466,14 +465,14 @@ h1 {
   text-align: center;
 }
 
-/* line 49, ../sass/all.sass */
-.clearBoth:before, .nav-stly:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .contactMe:before, .foot-page:before, .aboutMe-range:before, .contactMe-range::after:before, .clearBoth:after, .nav-stly:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .contactMe:after, .foot-page:after, .aboutMe-range:after, .contactMe-range::after:after {
+/* line 50, ../sass/all.sass */
+.clearBoth:before, .nav-stly:before, .nav-stly-clone:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .contactMe:before, .foot-page:before, .aboutMe-range:before, .contactMe-range::after:before, .clearBoth:after, .nav-stly:after, .nav-stly-clone:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .contactMe:after, .foot-page:after, .aboutMe-range:after, .contactMe-range::after:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 54, ../sass/all.sass */
+/* line 55, ../sass/all.sass */
 .vertical-align-style, .banner-style .unslider-arrow {
   position: relative;
   top: 50%;
@@ -484,63 +483,73 @@ h1 {
   transform: translateY(-50%);
 }
 
-/* line 59, ../sass/all.sass */
+/* line 60, ../sass/all.sass */
 .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
   margin-bottom: 10vh;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 62, ../sass/all.sass */
+  /* line 63, ../sass/all.sass */
   .margin-b, .banner, .head-zone, .main, .aboutMe, .linkpage {
     margin-bottom: 3em;
   }
 }
-/* line 80, ../sass/all.sass */
+/* line 81, ../sass/all.sass */
 .gridStyle {
   width: 100%;
   padding: 0 10%;
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 84, ../sass/all.sass */
+  /* line 85, ../sass/all.sass */
   .gridStyle {
     padding: 0 5%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 87, ../sass/all.sass */
+  /* line 88, ../sass/all.sass */
   .gridStyle {
     padding: 0 2%;
   }
 }
-/* line 89, ../sass/all.sass */
-.nav-stly {
-  position: absolute;
+/* line 91, ../sass/all.sass */
+.nav-stly, .nav-stly-clone {
   top: 0;
   width: 100%;
-  height: auto;
   background: #38a4ab;
   opacity: 1;
-  z-index: 999;
   overflow: hidden;
 }
 
 /* line 100, ../sass/all.sass */
-.nav-stly-fixed {
+.nav-stly-clone {
   position: fixed;
-  top: 0px;
-  opacity: 0.8;
-  z-index: 999;
+  top: -60px;
+  opacity: 0.6;
+  z-index: 9999;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 106, ../sass/all.sass */
+.nav-stly-clone:hover {
+  opacity: 1;
 }
 
-/* line 105, ../sass/all.sass */
+/* line 108, ../sass/all.sass */
+.nav-stly-clone.visibles {
+  top: 0px;
+}
+
+/* line 110, ../sass/all.sass */
 .banner {
   position: relative;
   max-width: 100%;
   max-height: 380px;
 }
 
-/* line 111, ../sass/all.sass */
+/* line 116, ../sass/all.sass */
 .head-zone {
   position: relative;
   width: 100%;
@@ -550,44 +559,44 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 123, ../sass/all.sass */
+  /* line 128, ../sass/all.sass */
   .head-zone {
     height: 400px;
   }
 }
-/* line 125, ../sass/all.sass */
+/* line 130, ../sass/all.sass */
 .main {
   position: relative;
 }
 
-/* line 129, ../sass/all.sass */
+/* line 134, ../sass/all.sass */
 .aboutMe {
   background: #38a4ab;
   background: url("../images/contact_bg.png") #232d3c top center;
   background-attachment: fixed;
 }
 
-/* line 135, ../sass/all.sass */
+/* line 140, ../sass/all.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
   background: white;
 }
 
-/* line 141, ../sass/all.sass */
+/* line 146, ../sass/all.sass */
 .contactMe {
   padding-bottom: 3em;
   background: url("../images/contact_bg.png") #232d3c top center;
   background-attachment: fixed;
 }
 
-/* line 146, ../sass/all.sass */
+/* line 151, ../sass/all.sass */
 .foot-page {
   height: 40px;
   background: #242d3c;
 }
 
-/* line 152, ../sass/all.sass */
+/* line 157, ../sass/all.sass */
 .strong-t {
   padding: 0;
   color: khaki;
@@ -596,7 +605,7 @@ h1 {
   line-height: 2em;
 }
 
-/* line 158, ../sass/all.sass */
+/* line 163, ../sass/all.sass */
 .a-link {
   margin: 0 0.3em;
   padding: 0.3em;
@@ -604,20 +613,20 @@ h1 {
   border: 1px solid khaki;
   border-radius: 10px;
 }
-/* line 164, ../sass/all.sass */
+/* line 169, ../sass/all.sass */
 .a-link:hover {
   color: #38a4ab;
   background: khaki;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 168, ../sass/all.sass */
+  /* line 173, ../sass/all.sass */
   .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 172, ../sass/all.sass */
+/* line 177, ../sass/all.sass */
 .top {
   display: block;
   cursor: pointer;
@@ -637,11 +646,11 @@ h1 {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 186, ../sass/all.sass */
+/* line 191, ../sass/all.sass */
 .top:hover {
   opacity: 1;
 }
-/* line 188, ../sass/all.sass */
+/* line 193, ../sass/all.sass */
 .top::after {
   content: "^";
   color: white;
@@ -652,20 +661,20 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 196, ../sass/all.sass */
+  /* line 201, ../sass/all.sass */
   .top {
     bottom: 5%;
     width: 40px;
     height: 40px;
   }
-  /* line 200, ../sass/all.sass */
+  /* line 205, ../sass/all.sass */
   .top::after {
     content: "TOP";
     font-size: 12pt;
     line-height: 40px;
   }
 }
-/* line 204, ../sass/all.sass */
+/* line 209, ../sass/all.sass */
 .nav-icon {
   cursor: pointer;
   height: auto;
@@ -677,7 +686,7 @@ h1 {
   line-height: 60px;
 }
 
-/* line 213, ../sass/all.sass */
+/* line 218, ../sass/all.sass */
 .logo {
   position: relative;
   float: left;
@@ -688,72 +697,72 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 221, ../sass/all.sass */
+/* line 226, ../sass/all.sass */
 ul.navbar {
   display: block;
   float: right;
 }
-/* line 224, ../sass/all.sass */
+/* line 229, ../sass/all.sass */
 ul.navbar li {
   float: left;
   font-size: 14pt;
 }
-/* line 227, ../sass/all.sass */
+/* line 232, ../sass/all.sass */
 ul.navbar li a {
   display: block;
   padding: 0 1em;
   line-height: 60px;
 }
-/* line 231, ../sass/all.sass */
+/* line 236, ../sass/all.sass */
 ul.navbar li a:hover {
   color: saddlebrown;
   background-color: khaki;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 235, ../sass/all.sass */
+  /* line 240, ../sass/all.sass */
   .nav-icon {
     display: block;
   }
 
-  /* line 237, ../sass/all.sass */
+  /* line 242, ../sass/all.sass */
   ul.navbar {
     display: none;
     width: 100%;
     background: #38a4ab;
     z-index: 9999999;
   }
-  /* line 242, ../sass/all.sass */
+  /* line 247, ../sass/all.sass */
   ul.navbar li {
     width: 100%;
   }
 }
-/* line 244, ../sass/all.sass */
+/* line 249, ../sass/all.sass */
 .nav-icon-show {
   display: block !important;
 }
 
-/* line 247, ../sass/all.sass */
+/* line 252, ../sass/all.sass */
 .slideshow {
   position: relative;
   width: 100%;
 }
-/* line 250, ../sass/all.sass */
+/* line 255, ../sass/all.sass */
 .slideshow .slide-left {
   left: 0%;
 }
-/* line 252, ../sass/all.sass */
+/* line 257, ../sass/all.sass */
 .slideshow .slide-right {
   right: 0%;
 }
-/* line 254, ../sass/all.sass */
+/* line 259, ../sass/all.sass */
 .slideshow .slide-img {
   display: none;
   position: absolute;
   height: 465px;
   overflow: hidden;
 }
-/* line 259, ../sass/all.sass */
+/* line 264, ../sass/all.sass */
 .slideshow .slide-img h1 {
   z-index: 10;
   position: absolute;
@@ -766,20 +775,20 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 270, ../sass/all.sass */
+/* line 275, ../sass/all.sass */
 .slideshow .slide-img h1:hover {
   opacity: 1;
 }
-/* line 272, ../sass/all.sass */
+/* line 277, ../sass/all.sass */
 .slideshow .slide-img .left-h1 {
   margin-left: -42%;
 }
-/* line 274, ../sass/all.sass */
+/* line 279, ../sass/all.sass */
 .slideshow .slide-img .right-h1 {
   margin-left: 22%;
 }
 
-/* line 276, ../sass/all.sass */
+/* line 281, ../sass/all.sass */
 .slideshow-mobile {
   display: none;
   width: 480px;
@@ -789,17 +798,17 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 283, ../sass/all.sass */
+  /* line 288, ../sass/all.sass */
   .slideshow {
     display: none;
   }
 
-  /* line 285, ../sass/all.sass */
+  /* line 290, ../sass/all.sass */
   .slideshow-mobile {
     display: block;
   }
 }
-/* line 290, ../sass/all.sass */
+/* line 295, ../sass/all.sass */
 .banner-style .unslider-arrow {
   z-index: 999;
   position: absolute;
@@ -817,11 +826,11 @@ ul.navbar li a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 300, ../sass/all.sass */
+/* line 305, ../sass/all.sass */
 .banner-style .unslider-arrow:hover {
   opacity: 0.8;
 }
-/* line 302, ../sass/all.sass */
+/* line 307, ../sass/all.sass */
 .banner-style .prev,
 .banner-style .next {
   font-size: 100pt;
@@ -829,21 +838,21 @@ ul.navbar li a:hover {
   line-height: 125px;
   text-align: center;
 }
-/* line 308, ../sass/all.sass */
+/* line 313, ../sass/all.sass */
 .banner-style .prev {
   left: 1%;
 }
-/* line 310, ../sass/all.sass */
+/* line 315, ../sass/all.sass */
 .banner-style .next {
   right: 1%;
 }
-/* line 312, ../sass/all.sass */
+/* line 317, ../sass/all.sass */
 .banner-style .banner-img {
   position: relative;
   float: left;
   background: steelblue;
 }
-/* line 316, ../sass/all.sass */
+/* line 321, ../sass/all.sass */
 .banner-style h1 {
   z-index: 10;
   position: absolute;
@@ -857,22 +866,22 @@ ul.navbar li a:hover {
   text-transform: uppercase;
   opacity: 0.8;
 }
-/* line 328, ../sass/all.sass */
+/* line 333, ../sass/all.sass */
 .banner-style h1:hover {
   opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 332, ../sass/all.sass */
+  /* line 337, ../sass/all.sass */
   .banner-style .unslider-arrow {
     display: none;
   }
-  /* line 334, ../sass/all.sass */
+  /* line 339, ../sass/all.sass */
   .banner-style .banner-img {
     height: 90vh;
   }
 }
-/* line 337, ../sass/all.sass */
+/* line 342, ../sass/all.sass */
 .product-Msize, .linkpage-size {
   float: left;
   width: 25%;
@@ -880,24 +889,24 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 342, ../sass/all.sass */
+  /* line 347, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 33.33%;
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 345, ../sass/all.sass */
+  /* line 350, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 50%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 348, ../sass/all.sass */
+  /* line 353, ../sass/all.sass */
   .product-Msize, .linkpage-size {
     width: 100%;
   }
 }
-/* line 350, ../sass/all.sass */
+/* line 355, ../sass/all.sass */
 .product-style {
   height: 450px;
   border: 1px solid #dddddd;
@@ -909,26 +918,26 @@ ul.navbar li a:hover {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 357, ../sass/all.sass */
+/* line 362, ../sass/all.sass */
 .product-style:hover {
   background: #ddeeee;
 }
-/* line 359, ../sass/all.sass */
+/* line 364, ../sass/all.sass */
 .product-style .product-img {
   width: 100%;
   height: auto;
   background: slategrey;
   overflow: hidden;
 }
-/* line 364, ../sass/all.sass */
+/* line 369, ../sass/all.sass */
 .product-style .product-img img {
   width: 100%;
 }
-/* line 366, ../sass/all.sass */
+/* line 371, ../sass/all.sass */
 .product-style .product-article {
   padding: 0 1em 1em 1em;
 }
-/* line 368, ../sass/all.sass */
+/* line 373, ../sass/all.sass */
 .product-style .product-title {
   padding: 1em 0;
   font-size: 1.2em;
@@ -937,58 +946,58 @@ ul.navbar li a:hover {
   text-align: center;
   color: #38a4ab;
 }
-/* line 375, ../sass/all.sass */
+/* line 380, ../sass/all.sass */
 .product-style .product-tag {
   font-size: 10pt;
   line-height: 3em;
   padding: 5px;
   background: #38a4ab;
 }
-/* line 380, ../sass/all.sass */
+/* line 385, ../sass/all.sass */
 .product-style p {
   font-size: 12pt;
   letter-spacing: 0.05em;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 384, ../sass/all.sass */
+  /* line 389, ../sass/all.sass */
   .product-style {
     height: auto;
   }
 }
-/* line 387, ../sass/all.sass */
+/* line 392, ../sass/all.sass */
 .aboutMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 392, ../sass/all.sass */
+/* line 397, ../sass/all.sass */
 .aboutMe-range .ab-myphoto {
   float: left;
   width: 40%;
   padding: 2em;
   text-align: center;
 }
-/* line 397, ../sass/all.sass */
+/* line 402, ../sass/all.sass */
 .aboutMe-range .ab-myphoto img {
   max-width: 200px;
   height: auto;
 }
-/* line 400, ../sass/all.sass */
+/* line 405, ../sass/all.sass */
 .aboutMe-range .ab-txt {
   float: right;
   width: 60%;
   padding: 2em;
   text-align: left;
 }
-/* line 405, ../sass/all.sass */
+/* line 410, ../sass/all.sass */
 .aboutMe-range .ab-txt p {
   margin-bottom: 1em;
   color: white;
   font-size: 14pt;
   letter-spacing: 0.05em;
 }
-/* line 410, ../sass/all.sass */
+/* line 415, ../sass/all.sass */
 .aboutMe-range .ab-title {
   color: white;
   font-size: 32pt;
@@ -996,18 +1005,18 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 415, ../sass/all.sass */
+  /* line 420, ../sass/all.sass */
   .aboutMe-range {
     padding: 0;
   }
-  /* line 417, ../sass/all.sass */
+  /* line 422, ../sass/all.sass */
   .aboutMe-range .ab-myphoto {
     float: none;
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
   }
-  /* line 422, ../sass/all.sass */
+  /* line 427, ../sass/all.sass */
   .aboutMe-range .ab-txt {
     float: none;
     width: 100%;
@@ -1016,35 +1025,35 @@ ul.navbar li a:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 428, ../sass/all.sass */
+  /* line 433, ../sass/all.sass */
   .ab-txt .a-link {
     display: block;
     margin-top: 0.5em;
   }
 }
-/* line 434, ../sass/all.sass */
+/* line 439, ../sass/all.sass */
 .linkpage-size .product-tag {
   background-color: steelblue;
 }
 
-/* line 437, ../sass/all.sass */
+/* line 442, ../sass/all.sass */
 .contactMe-range {
   width: 100%;
   margin: 0 auto;
   padding: 2em;
 }
-/* line 443, ../sass/all.sass */
+/* line 448, ../sass/all.sass */
 .contactMe-range .conta-form, .contactMe-range .conta-adress {
   float: right;
   width: 55%;
   padding: 1em;
 }
-/* line 448, ../sass/all.sass */
+/* line 453, ../sass/all.sass */
 .contactMe-range .form-type {
   width: 100%;
   margin-bottom: 2em;
 }
-/* line 453, ../sass/all.sass */
+/* line 458, ../sass/all.sass */
 .contactMe-range .form-type input, .contactMe-range .form-type textarea, .contactMe-range .form-type button {
   width: 100%;
   padding: 0.5em;
@@ -1059,7 +1068,7 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 463, ../sass/all.sass */
+/* line 468, ../sass/all.sass */
 .contactMe-range .form-type input:focus, .contactMe-range .form-type textarea:focus, .contactMe-range .form-type button:focus {
   color: #444444;
   background: white;
@@ -1068,11 +1077,11 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 467, ../sass/all.sass */
+/* line 472, ../sass/all.sass */
 .contactMe-range .form-type button {
   cursor: pointer;
 }
-/* line 469, ../sass/all.sass */
+/* line 474, ../sass/all.sass */
 .contactMe-range .form-type button:hover {
   color: #38a4ab;
   background: khaki;
@@ -1081,29 +1090,29 @@ ul.navbar li a:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 473, ../sass/all.sass */
+/* line 478, ../sass/all.sass */
 .contactMe-range .conta-adress {
   width: 40%;
   padding: 1em;
   text-align: center;
   font-family: helvetica, "微軟正黑體";
 }
-/* line 478, ../sass/all.sass */
+/* line 483, ../sass/all.sass */
 .contactMe-range .conta-adress h2 {
   color: white;
   font-size: 2em;
   padding: 0.5em;
 }
-/* line 482, ../sass/all.sass */
+/* line 487, ../sass/all.sass */
 .contactMe-range .conta-adress a {
   padding: 0 0.5em;
 }
-/* line 484, ../sass/all.sass */
+/* line 489, ../sass/all.sass */
 .contactMe-range .conta-adress p {
   padding: 0.5em;
   color: white;
 }
-/* line 487, ../sass/all.sass */
+/* line 492, ../sass/all.sass */
 .contactMe-range .conta-adress .myphoto {
   max-width: 200px;
   height: auto;
@@ -1111,27 +1120,27 @@ ul.navbar li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 492, ../sass/all.sass */
+  /* line 497, ../sass/all.sass */
   .contactMe-range {
     padding: 0;
   }
-  /* line 494, ../sass/all.sass */
+  /* line 499, ../sass/all.sass */
   .contactMe-range .conta-form, .contactMe-range .conta-adress {
     float: none;
     width: 100%;
     padding: 1em;
   }
-  /* line 499, ../sass/all.sass */
+  /* line 504, ../sass/all.sass */
   .contactMe-range .conta-adress .myphoto {
     max-width: 200px;
     height: auto;
   }
 }
-/* line 503, ../sass/all.sass */
+/* line 508, ../sass/all.sass */
 .foot-tetx {
   margin: 0 auto;
 }
-/* line 505, ../sass/all.sass */
+/* line 510, ../sass/all.sass */
 .foot-tetx p {
   color: #38a4ab;
   font-size: 11pt;

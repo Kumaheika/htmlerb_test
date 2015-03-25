@@ -21,11 +21,12 @@ $color-n: SteelBlue
 //SVG圖標
 @import svg
 
+//========================== 基本set ==========================
 *
 	@include box-sizing(border-box)
 	text-decoration: none
 body
-	padding-top: 60px
+	// padding-top: 60px
 	font-family: helvetica,"微軟正黑體"
 	background-image: url("../images/bg.png")
 a
@@ -86,22 +87,26 @@ h1
 @media only screen and (max-width: $mobile)
 	.gridStyle
 		padding: 0 2%
-.nav-stly
-	position: absolute
+//上方主選單
+.nav-stly, .nav-stly-clone
+	// position: absolute
 	top: 0
 	width: 100%
-	height: auto
 	background: $color-1st
 	opacity: 1
-	z-index: 999
+	// z-index: 9999
 	overflow: hidden
 	@extend .clearBoth
-	// @extend .margin-b
-.nav-stly-fixed
+.nav-stly-clone
 	position: fixed
+	top: -60px
+	opacity: .6
+	z-index: 9999
+	+transition(.5s)
+	&:hover
+		opacity: 1
+.nav-stly-clone.visibles
 	top: 0px
-	opacity: .8
-	z-index: 999
 .banner
 	position: relative
 	max-width: 100%
