@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$('.unlink').click(function(e){
+		e.preventDefault();
+	});
 	//Top
 	$('.top').click(function(){
 		goTag('html,body');
@@ -34,5 +37,6 @@ $(document).ready(function(){
 		$("html,body").animate({
             scrollTop: y01
         }, 400);
+        $('ul.navbar').toggleClass('nav-icon-show');
 	};
 });
