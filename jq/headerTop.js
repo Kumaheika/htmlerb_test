@@ -12,6 +12,7 @@
 		});
 		$window.trigger('scroll');
 	});
+	throttle
 });*/
 $(function () {
 
@@ -33,6 +34,7 @@ $(function () {
 	    		$headerContainer.removeClass('visibles');
 	    	}
 	    });
+
 	    $window.trigger('scroll');
 	});
 });

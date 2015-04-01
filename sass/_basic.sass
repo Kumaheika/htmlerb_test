@@ -1,0 +1,49 @@
+//========================== 基本set ==========================
+*
+	@include box-sizing(border-box)
+	text-decoration: none
+body
+	// padding-top: 60px
+	font-family: helvetica,"微軟正黑體"
+	background-image: url("../images/bg.png")
+a
+	color: #fff
+	&:hover
+		color: $color-4th
+p
+	color: $color-t3
+	line-height: 1.5em
+h1
+	font-family: 'Exo',helvetica,"微軟正黑體"
+	margin-bottom: .5em
+	padding: 1em
+	color: #fff
+	font-size: 40pt
+	font-weight: 700
+	// text-transform: uppercase //大寫
+	text-align: center
+//去除float
+.clearBoth
+	&:before , &:after
+		content: " "
+		display: table
+		clear: both
+//垂直致中
+.vertical-align-style
+	position: relative
+	top: 50%
+	@include transform(translateY(-50%))
+//下推2em
+.margin-b
+	margin-bottom: 10vh
+@media only screen and (max-width: $pad)
+	.margin-b
+		margin-bottom: 3em
+//hover上移+shadow -- 父元素需 position
+.hover-shadow
+	position: relative
+	top: 0
+	+transition(.3s)
+	&:hover, &:active 
+		top: -10px
+		@include box-shadow ( 0px 5px 8px 0px rgba(20%,20%,40%,0.3)  )

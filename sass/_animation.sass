@@ -1,0 +1,31 @@
+//========================== animation ==========================
+.ani-delay-1s
+	+animation-delay(1s)
+.ani-posi-Left
+	position: relative
+	left: -30%
+	opacity: 0
+.ani-posi-Right
+	position: relative
+	right: -30%
+	opacity: 0
+.ani-runIn-Left
+	+animation(runIn-Left .7s ease-out .2s forwards)
+.ani-runIn-Right
+	+animation(runIn-Right .7s ease-out .2s forwards)
+
++keyframes(runIn-Left)
+	0%
+		left: -30%
+		opacity: 0
+	100%
+		left: 0
+		opacity: 1
++keyframes(runIn-Right)
+	0%
+		right: -30%
+		opacity: 0
+	100%
+		right: 0
+		opacity: 1
+
