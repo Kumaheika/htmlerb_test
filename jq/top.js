@@ -10,7 +10,11 @@ $(document).ready(function(){
 	$('.top').click(function(){
 		goTag('html,body');
 	});
-	//關於我
+	//網頁專案
+	$(".btn-main").click(function () {
+		goTag('.main');
+    });
+    //關於我
 	$(".btn-aboutMe").click(function () {
 		goTag('.aboutMe');
     });
