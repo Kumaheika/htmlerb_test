@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Exo);
-/* line 5, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,45 +22,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Users/kuma/Desktop/new_fire.app_1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Users/KumaHeika/Desktop/fire.app 1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -465,7 +465,7 @@ h1 {
 }
 
 /* line 27, ../sass/_basic.sass */
-.clearBoth:before, .nav-stly:before, .nav-stly-clone:before, .banner:before, .head-zone:before, .main:before, .aboutMe:before, .linkpage:before, .contactMe:before, .foot-page:before, .aboutMe-range:before, .clearBoth:after, .nav-stly:after, .nav-stly-clone:after, .banner:after, .head-zone:after, .main:after, .aboutMe:after, .linkpage:after, .contactMe:after, .foot-page:after, .aboutMe-range:after, .contactMe-range::after:after {
+.clearBoth:before, .nav-stly:before, .nav-stly-clone:before, .banner:before, .head-zone:before, .aboutMe-range:before, .clearBoth:after, .nav-stly:after, .nav-stly-clone:after, .banner:after, .head-zone:after, .aboutMe-range:after, .contactMe-range::after:after {
   content: " ";
   display: table;
   clear: both;
@@ -514,20 +514,26 @@ h1 {
   width: 100%;
   padding: 0 10%;
 }
+/* line 19, ../sass/_layout.sass */
+.gridStyle:before, .gridStyle:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
 @media only screen and (max-width: 1280px) {
-  /* line 20, ../sass/_layout.sass */
+  /* line 24, ../sass/_layout.sass */
   .gridStyle {
     padding: 0 5%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 23, ../sass/_layout.sass */
+  /* line 27, ../sass/_layout.sass */
   .gridStyle {
     padding: 0 2%;
   }
 }
-/* line 26, ../sass/_layout.sass */
+/* line 30, ../sass/_layout.sass */
 .nav-stly, .nav-stly-clone {
   top: 0;
   width: 100%;
@@ -536,7 +542,7 @@ h1 {
   overflow: hidden;
 }
 
-/* line 35, ../sass/_layout.sass */
+/* line 39, ../sass/_layout.sass */
 .nav-stly-clone {
   position: fixed;
   top: -60px;
@@ -547,24 +553,24 @@ h1 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 41, ../sass/_layout.sass */
+/* line 45, ../sass/_layout.sass */
 .nav-stly-clone:hover {
   opacity: 1;
 }
 
-/* line 43, ../sass/_layout.sass */
+/* line 47, ../sass/_layout.sass */
 .nav-stly-clone.visibles {
   top: 0px;
 }
 
-/* line 45, ../sass/_layout.sass */
+/* line 49, ../sass/_layout.sass */
 .banner {
   position: relative;
   max-width: 100%;
   max-height: 380px;
 }
 
-/* line 51, ../sass/_layout.sass */
+/* line 55, ../sass/_layout.sass */
 .head-zone {
   position: relative;
   width: 100%;
@@ -577,30 +583,30 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 61, ../sass/_layout.sass */
+  /* line 65, ../sass/_layout.sass */
   .head-zone {
     height: 400px;
   }
 }
-/* line 63, ../sass/_layout.sass */
+/* line 67, ../sass/_layout.sass */
 .main {
   position: relative;
 }
 
-/* line 67, ../sass/_layout.sass */
+/* line 70, ../sass/_layout.sass */
 .aboutMe {
   background: url("../images/contact_bg.png") #232d3c top center;
   background-attachment: fixed;
 }
 
-/* line 72, ../sass/_layout.sass */
+/* line 74, ../sass/_layout.sass */
 .linkpage {
   padding-top: 2em;
   padding-bottom: 2em;
   background: #fff;
 }
 
-/* line 78, ../sass/_layout.sass */
+/* line 79, ../sass/_layout.sass */
 .contactMe {
   padding-bottom: 3em;
   background: url("../images/contact_bg.png") #232d3c top center;

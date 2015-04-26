@@ -16,6 +16,10 @@
 .gridStyle
 	width: 100%
 	padding: 0 10%
+	&:before , &:after
+		content: " "
+		display: table
+		clear: both
 @media only screen and (max-width: $full)
 	.gridStyle
 		padding: 0 5%
@@ -62,25 +66,20 @@
 		height: 400px
 .main
 	position: relative
-	@extend .clearBoth
 	@extend .margin-b
 .aboutMe
 	background: url("../images/contact_bg.png") rgba(35, 45, 60, 1) top center
 	background-attachment: fixed
-	@extend .clearBoth
 	@extend .margin-b
 .linkpage
 	padding-top: 2em
 	padding-bottom: 2em
 	background: #fff
-	@extend .clearBoth
 	@extend .margin-b
 .contactMe
 	padding-bottom: 3em
 	background: url("../images/contact_bg.png") rgba(35, 45, 60, 1) top center
 	background-attachment: fixed
-	@extend .clearBoth
 .foot-page
 	height: 40px
 	background: $color-3rd
-	@extend .clearBoth
